@@ -23,7 +23,7 @@ import Head from 'next/head'
 import Meta from '@hackclub/meta'
 import theme from '@hackclub/theme'
 import ColorSwitcher from '../components/color-switcher'
-
+import { TypeScale, ColorPalette } from '@theme-ui/style-guide'
 
 const DocsPage = () => (
   <>
@@ -41,11 +41,14 @@ const DocsPage = () => (
           Hack Club SVIT
         </Heading>
         <Text as="p" variant="subtitle" mt={3}>
-          Stay Tuned...
+          <Link href="https://apacdirectory.hackclub.com/club/svit">Hack Club SVIT’s profile</Link> 
         </Text>
-       
+        <Text>Stay Tuned...
+          </Text>
+     
       </Container>
     </Box>
+  
   
   </>
 )
