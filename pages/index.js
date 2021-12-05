@@ -43,7 +43,8 @@ const DocsPage = () => (
         <Text as="p" variant="subtitle" mt={3}>
           <Link href="https://apacdirectory.hackclub.com/club/svit">Hack Club SVIT’s profile</Link> 
         </Text>
-        <Text>Stay Tuned...
+        <Text as="p" variant="subtitle" mt={3}>
+          Stay Tuned...
           </Text>
      
       </Container>
