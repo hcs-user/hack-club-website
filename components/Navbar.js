@@ -24,6 +24,7 @@ export default function Navbar() {
             alignItems: 'center',
             color: "theme.util.gxText('sheet', 'primary')",
             '@media (max-width:426px)': {
+              ml: 0,
               width: '100%',
               justifyContent: 'center',
               alignContent: 'center'
@@ -36,7 +37,6 @@ export default function Navbar() {
             height={50}
             alt="Picture of the author"
           />
-          HackClubSvit
         </Box>
         <Box
           sx={{
