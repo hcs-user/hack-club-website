@@ -24,7 +24,6 @@ export default class App extends NextApp {
         <Component {...pageProps}/>
         {/* <Gallery></Gallery> */}
         <Events></Events>
-        <Component {...pageProps} />
         <Gallery></Gallery>
       </ThemeProvider>
     )

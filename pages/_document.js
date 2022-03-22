@@ -10,7 +10,9 @@ export default class extends Document {
   render() {
     return (
       <Html lang="en">
-        <Head />
+        <Head>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r79/three.min.js"></script>
+        </Head>
         <body>
           <InitializeColorMode />
           <Main />

@@ -5,7 +5,7 @@ const ColorSwitcher = (props) => {
   return (
     <IconButton
       onClick={() => setMode(mode === 'dark' ? 'light' : 'dark')}
-      title={`Switch to ${mode === 'dark' ? 'light' : 'dark'} mode`}
+      // title={`Switch to ${mode === 'dark' ? 'light' : 'dark'} mode`}
       sx={{
         position: 'absolute',
         top: [2, 3],

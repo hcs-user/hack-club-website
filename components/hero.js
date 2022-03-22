@@ -18,6 +18,7 @@ function Hero() {
                         '@media (max-width:426px)': {
                             justifyContent: "center",
                         },
+                        
                     }}
                     css={{
                     }}

@@ -28,12 +28,14 @@ import Router from 'next/dist/server/router'
 import React, { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
+import Image from 'next/image';
 
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/effect-fade";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+const logo = require('../assets/logo.png');
 
 // import "./styles.css";
 
@@ -43,81 +45,38 @@ import { EffectFade, Navigation, Pagination } from "swiper";
 function Gallery() {
     return <div>
         <Flex sx={{
-
-            flexDirection: ["column", "row"],
-            justifyContent: "space-between",
-
-            border: "1px solid red",
+            flexDirection: "row",
+            justifyContent: "center",
+            m: "auto"
         }}>
-            {/* <Container props="theme.layout={wide}"
-                sx={{
-                    bg: "sheet",
-                    ml: "5%",
-                    mt: "2%",
-                    mb: "2%",
-                    height: "80vh",
-                    borderRadius: "10px",
-                    textAlign: "center",
-                    width: "15%",
-                    overflow: "auto",
-                    "::-webkit-scrollbar ": {
-                        width: "8px",
+            <Container sx={{ maxHeight: "50vw !important", fontSize: "2rem", textAlign: 'center', borderRadius: "5px", padding: "20px" }} bg={'sheet'} b>
+                <Text backgroundColor={'primary'} p={2} sx={{ borderRadius: "15px" }}>A Glance of Hack Club SVIT</Text>
 
-
-                    },
-                    "::-webkit-scrollbar-track": {
-                        // background:"background: rgba(61, 61, 61)"
-                        background: "darken",
-
-                    },
-                    "::-webkit-scrollbar-thumb": {
-                        background: "rgba(102, 102, 102, 0.637)",
-                        borderRadius: "10px",
-                    },
-
-                }}>
-
-            <Card sx={{ height: "15%", mt: "8%", ':hover':{height:"16%",transform:"scale(1.1)",boxShadow:"0 0 10px 0.4px"}}}>Insights Of Events</Card>
-            <Card sx={{ height: "22%", mt: "8%",':hover':{height:"22.2%",transform:"scale(1.1)",transition:"all 0.3s ease-in-out"} }}>HacktoberFest 2021</Card>
-            <Card sx={{ height: "22%", mt: "8%",':hover':{height:"22.2%",transform:"scale(1.1)",transition:"all 0.3s ease-in-out"} }}>Flutter BootCamp</Card>
-            <Card sx={{ height: "22%", mt: "8%",':hover':{height:"22.2%",transform:"scale(1.1)",transition:"all 0.3s ease-in-out"} }}>Web-Dev BootCamp</Card>
-            <Card sx={{ height: "22%", mt: "8%",':hover':{height:"22.2%",transform:"scale(1.1)",transition:"all 0.3s ease-in-out"} }}>Web-Dev BootCamp</Card>
-            <Card sx={{ height: "22%", mt: "8%",':hover':{height:"22.2%",transform:"scale(1.1)",transition:"all 0.3s ease-in-out"} }}>Web-Dev BootCamp</Card>
-            <Card sx={{ height: "22%", mt: "8%",mb:"8%",':hover':{height:"22.2%",transition:"all 0.5s ease-in-out",boxShadow:"0 0 10px 0.4px"} }}>Web-Dev BootCamp</Card>
-        </Container>
-                <Card sx={{ height: "15%", mt: "8%", ':hover': { height: "16%", transform: "scale(1.1)", boxShadow: "0 0 10px 0.4px" } }}>Insights Of Events</Card>
-                <Card sx={{ height: "22%", mt: "8%", ':hover': { height: "22.2%", transform: "scale(1.1)", transition: "all 0.3s ease-in-out" } }}>HactoberFest 2021</Card>
-                <Card sx={{ height: "22%", mt: "8%", ':hover': { height: "22.2%", transform: "scale(1.1)", transition: "all 0.3s ease-in-out" } }}>Flutter BootCamp</Card>
-                <Card sx={{ height: "22%", mt: "8%", ':hover': { height: "22.2%", transform: "scale(1.1)", transition: "all 0.3s ease-in-out" } }}>Web-Dev BootCamp</Card>
-                <Card sx={{ height: "22%", mt: "8%", ':hover': { height: "22.2%", transform: "scale(1.1)", transition: "all 0.3s ease-in-out" } }}>Web-Dev BootCamp</Card>
-                <Card sx={{ height: "22%", mt: "8%", ':hover': { height: "22.2%", transform: "scale(1.1)", transition: "all 0.3s ease-in-out" } }}>Web-Dev BootCamp</Card>
-                <Card sx={{ height: "22%", mt: "8%", mb: "8%", ':hover': { height: "22.2%", transition: "all 0.5s ease-in-out", boxShadow: "0 0 10px 0.4px" } }}>Web-Dev BootCamp</Card>
-            </Container> */}
-            <Container sx={{ maxHeight: "50vw !important",fontSize:"2rem",textAlign:'center',}}>
-                <Text padding={10}>A Glance of Hack Club SVIT</Text>
-                <Swiper
-                    spaceBetween={10}
-                    effect={"fade"}
-                    navigation={true}
-                    pagination={{
-                        clickable: true,
-                    }}
-                    modules={[EffectFade, Navigation, Pagination]}
-                    className="mySwiper"
-                >
-                    <SwiperSlide>
-                        <img src="https://swiperjs.com/demos/images/nature-1.jpg" height={600} width={1000}/>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <img src="https://swiperjs.com/demos/images/nature-2.jpg" height={600} width={1000} />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <img src="https://swiperjs.com/demos/images/nature-3.jpg" height={600} width={1000} />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <img src="https://swiperjs.com/demos/images/nature-4.jpg" height={600} width={1000} />
-                    </SwiperSlide>
-                </Swiper>
+                <Box mt={4}>
+                    <Swiper
+                        spaceBetween={10}
+                        effect={"fade"}
+                        navigation={true}
+                        pagination={{
+                            clickable: true,
+                        }}
+                        modules={[EffectFade, Navigation, Pagination]}
+                        className="mySwiper"
+                    >
+                        <SwiperSlide>
+                            <Image src={logo} w={[60, 55, 80]} border={['1px solid red', '1px solid green', '1px solid blue']} h="auto" />
+                        </SwiperSlide>
+                        <SwiperSlide >
+                            <Image src={logo} />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <Image src={logo} />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <Image src={logo} />
+                        </SwiperSlide>
+                    </Swiper>
+                </Box>
             </Container>
         </Flex>
     </div>;
