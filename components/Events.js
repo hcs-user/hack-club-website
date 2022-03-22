@@ -48,3 +48,10 @@ export default function Events() {
         </Container>
     )
 }
+
+function Events() {
+  return (
+    <div>Events</div>
+  )
+}
+

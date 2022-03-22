@@ -26,7 +26,7 @@ function Hero() {
                     <br />
                     Collab
                     <br />
-                    Create
+                    Conquer
                     <br />
                 </Box>
                 <Button sx={{
