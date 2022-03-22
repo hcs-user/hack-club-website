@@ -10,6 +10,7 @@ import ColorSwitcher from '../components/color-switcher'
 import Navbar from '../components/Navbar'
 import Gallery from '../components/Gallery'
 import Events from '../components/Events'
+import About from '../components/About'
 import Hero from '../components/hero'
 
 export default class App extends NextApp {
@@ -25,6 +26,7 @@ export default class App extends NextApp {
         {/* <Gallery></Gallery> */}
         <Events></Events>
         <Gallery></Gallery>
+        <About></About>
       </ThemeProvider>
     )
   }

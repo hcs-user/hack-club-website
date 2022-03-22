@@ -9,7 +9,7 @@ const logo = require('../assets/logo.png');
 export default function Events() {
 
     return (
-        <Container p={2} sx={{ textAlign: "center" }} m={4} >
+        <Container p={2} m={4} mb={6}>
             <Text sx={{ fontSize: "4rem" }}>Events </Text>
             <Swiper
                 spaceBetween={40}
