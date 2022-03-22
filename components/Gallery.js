@@ -57,7 +57,7 @@ function Gallery() {
             }}>
 
             <Card sx={{ height: "15%", mt: "8%", ':hover':{height:"16%",transform:"scale(1.1)",boxShadow:"0 0 10px 0.4px"}}}>Insights Of Events</Card>
-            <Card sx={{ height: "22%", mt: "8%",':hover':{height:"22.2%",transform:"scale(1.1)",transition:"all 0.3s ease-in-out"} }}>HactoberFest 2021</Card>
+            <Card sx={{ height: "22%", mt: "8%",':hover':{height:"22.2%",transform:"scale(1.1)",transition:"all 0.3s ease-in-out"} }}>HacktoberFest 2021</Card>
             <Card sx={{ height: "22%", mt: "8%",':hover':{height:"22.2%",transform:"scale(1.1)",transition:"all 0.3s ease-in-out"} }}>Flutter BootCamp</Card>
             <Card sx={{ height: "22%", mt: "8%",':hover':{height:"22.2%",transform:"scale(1.1)",transition:"all 0.3s ease-in-out"} }}>Web-Dev BootCamp</Card>
             <Card sx={{ height: "22%", mt: "8%",':hover':{height:"22.2%",transform:"scale(1.1)",transition:"all 0.3s ease-in-out"} }}>Web-Dev BootCamp</Card>
