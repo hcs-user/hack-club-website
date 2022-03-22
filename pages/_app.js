@@ -21,14 +21,11 @@ export default class App extends NextApp {
       <ThemeProvider theme={theme}>
         <ColorSwitcher />
         <Navbar />
-<<<<<<< Updated upstream
         <Component {...pageProps}/>
         {/* <Gallery></Gallery> */}
         <Events></Events>
-=======
         <Component {...pageProps} />
         <Gallery></Gallery>
->>>>>>> Stashed changes
       </ThemeProvider>
     )
   }
