@@ -49,9 +49,4 @@ export default function Events() {
     )
 }
 
-function Events() {
-  return (
-    <div>Events</div>
-  )
-}
 
