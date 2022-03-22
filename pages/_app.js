@@ -9,6 +9,8 @@ import { ThemeProvider } from 'theme-ui'
 import ColorSwitcher from '../components/color-switcher'
 import Navbar from '../components/Navbar'
 import Gallery from '../components/Gallery'
+import Events from '../components/Events'
+import Hero from '../components/hero'
 
 export default class App extends NextApp {
   render() {
@@ -19,8 +21,9 @@ export default class App extends NextApp {
       <ThemeProvider theme={theme}>
         <ColorSwitcher />
         <Navbar />
-        <Component {...pageProps} />
+        <Component {...pageProps}/>
         {/* <Gallery></Gallery> */}
+        <Events></Events>
       </ThemeProvider>
     )
   }
