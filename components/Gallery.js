@@ -55,15 +55,15 @@ function Gallery() {
             <Box>
                 <Carousel>
                     <div>
-                        <img src="assets/1.jpeg" />
+                        <img src="/1.png" />
                         <p className="legend">Legend 1</p>
                     </div>
                     <div>
-                        <img src="assets/2.jpeg" />
+                        <img src="/2.jpg" />
                         <p className="legend">Legend 2</p>
                     </div>
                     <div>
-                        <img src="assets/3.jpeg" />
+                        <img src="/1.png" />
                         <p className="legend">Legend 3</p>
                     </div>
                 </Carousel>
