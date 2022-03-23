@@ -3,15 +3,16 @@ import { Box, Card, Container, Flex, Text } from 'theme-ui'
 import Image from 'next/image'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import theme from '@hackclub/theme';
+import logo from '../Public/logo.png'
 
-const logo = require('../assets/logo.png');
+// const logo = require('../assets/logo.png');
 
 export default function Events() {
 
     return (
         <Container p={2} mb={6} sx={{ textAlign: 'center', display: 'flex', justifyContent: 'center' }}>
             <Box >
-            <Text  sx={{ fontSize: "4rem",color:'primary',fontWeight:500 }}>Events </Text>
+                <Text sx={{ fontSize: "4rem", color: 'primary', fontWeight: 500 }}>Events </Text>
                 <Swiper
                     spaceBetween={40}
                     slidesPerView={3.4}
@@ -35,29 +36,34 @@ export default function Events() {
                 >
                     <Flex fontSize={'2rem'} sx={{ flexDirection: 'row', justifyContent: 'space-between', textAlign: 'center' }}>
                         <SwiperSlide>
-                            <Card m={2} sx={{ height:"240px", width: "200px", border: '4px solid purple', boxShadow: '0 0 10px 1px purple' }} >
+                            <Card m={2} sx={{
+                                height: "240px",
+                                width: "200px",
+                                border: '4px solid purple',
+                                boxShadow: '0 0 10px 1px purple',
+                            }} >
                                 <Image src={logo} />
                                 <Text >HacktoberFest</Text>
                             </Card>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <Card m={2} sx={{ height:"240px", width: "200px" }} >
+                            <Card m={2} sx={{ height: "240px", width: "200px" }} >
                                 <Image src={logo} />
                                 <Text>Flutter BootCamp</Text>
                             </Card>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <Card m={2} sx={{ height:"240px", width: "200px" }} >
+                            <Card m={2} sx={{ height: "240px", width: "200px" }} >
                                 <Image src={logo} />
                                 <Text>Web-Dev BootCamp</Text></Card>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <Card m={2} sx={{ height:"240px", width: "200px" }} >
+                            <Card m={2} sx={{ height: "240px", width: "200px" }} >
                                 <Image src={logo} />
                                 <Text>Web-Dev BootCamp</Text></Card>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <Card m={2} sx={{ height:"240px", width: "200px" }} >
+                            <Card m={2} sx={{ height: "240px", width: "200px" }} >
                                 <Image src={logo} />
                                 <Text>Web-Dev BootCamp</Text></Card>
                         </SwiperSlide>

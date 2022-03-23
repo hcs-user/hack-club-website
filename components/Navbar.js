@@ -1,12 +1,9 @@
 import { NavLink, Flex, Text, Box, Card } from 'theme-ui'
 import Image from 'next/image'
-import logo from '../Assets/logo.png'
-import home_icon from '../Assets/home.svg'
-import about_icon from '../Assets/about.svg'
-import events_icon from '../Assets/events.png'
-import team_icon from '../Assets/team.png'
-import gallery_icon from '../Assets/gallery.png'
+import logo from '../Public/logo.png'
+
 import { useState } from 'react'
+import ColorSwitcher from './color-switcher';
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   let COUNTER = 0;
@@ -26,14 +23,16 @@ export default function Navbar() {
     <div>
       <Box
         p={3}
-        bg="sheet"
+        bg="transperent"
         sx={{
-          position:'fixed',
-          width:'100%',
-          zIndex:5,
+          position: 'fixed',
+          width: '100%',
+          zIndex: 5,
           display: 'flex', justifyContent: 'flex-end',
           borderBottom: '1px solid grey',
-          alignItems: "center", fontSize: '18px'
+          alignItems: "center", fontSize: '18px',
+          backdropFilter:'blur(10px)',
+
         }}
       >
         <Box
@@ -60,21 +59,25 @@ export default function Navbar() {
             height={50}
             alt="Picture of the author"
           />
+        <ColorSwitcher/>
+
           <Box onClick={() => setIsOpen(!isOpen)} sx={{
             display: "none", '@media (max-width:426px)': {
               display: 'block',
             },
           }}>Menu </Box>
         </Box>
-        <Box id='nav-bar' sx={{
+        <Box sx={{
           display: (isOpen ? "block" : "none"),
+          margin: 1,
           width: '120px',
           position: 'absolute',
-          top: "12%",
+          top: "100%",
           right: "10%",
           backgroundColor: 'sunken',
-          borderRadius: '8px',textAlign:'center'
+          borderRadius: '8px', textAlign: 'center'
         }}>
+
           <Box sx={{ display: 'flex', flexDirection: 'column' }}>
             <NavLink m={2}>Home</NavLink>
             <NavLink m={2}>About</NavLink>
@@ -97,8 +100,8 @@ export default function Navbar() {
         >
           <NavLink>Home</NavLink>
           <NavLink>About</NavLink>
-          <NavLink>Gallery</NavLink>
           <NavLink>Events</NavLink>
+          <NavLink>Gallery</NavLink>
           <NavLink>Team</NavLink>
         </Box>
       </Box>

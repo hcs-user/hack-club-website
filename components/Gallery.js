@@ -40,7 +40,7 @@ import "swiper/css";
 import "swiper/css/effect-fade";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-const logo = require('../assets/logo.png');
+// const logo = require('../assets/logo.png');
 
 // import "./styles.css";
 
@@ -49,13 +49,17 @@ import { EffectFade, Navigation, Pagination } from "swiper";
 
 function Gallery() {
     return <div>
-        <Container mt={2} p={4} mb={2} backgroundColor={'sheet'} sx={{ height: '80vh', borderRadius: '5px', textAlign: 'center', fontSize: '2rem' }}>
+        <Container mt={2} p={4} mb={2} backgroundColor={'sheet'} sx={{ height: 'max-content',
+         borderRadius: '5px',
+          textAlign: 'center',
+           fontSize: '3rem',
+           fontWeight:500 }}>
 
             <Text p={2} sx={{ borderRadius: '8px', color: 'primary' }}>A Glance AT Hack Club SVIT</Text>
             <Box>
                 <Carousel>
                     <div>
-                        <img src="/1.png" />
+                        <img src="/1.png" h />
                         <p className="legend">Legend 1</p>
                     </div>
                     <div>
