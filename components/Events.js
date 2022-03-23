@@ -9,7 +9,7 @@ const logo = require('../assets/logo.png');
 export default function Events() {
 
     return (
-        <Container p={2} sx={{ textAlign: "center" }} >
+        <Container p={2} m={4} mb={6}>
             <Text sx={{ fontSize: "4rem" }}>Events </Text>
             <Swiper
                 spaceBetween={40}
@@ -46,13 +46,19 @@ export default function Events() {
                         </Card>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <Card m={2} sx={{ height: "200px", width: "200px" }} >Web-Dev BootCamp</Card>
+                        <Card m={2} sx={{ height: "200px", width: "200px" }} >
+                            <Image src={logo} />
+                            <Text>Web-Dev BootCamp</Text></Card>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <Card m={2} sx={{ height: "200px", width: "200px" }} >HI</Card>
+                        <Card m={2} sx={{ height: "200px", width: "200px" }} >
+                            <Image src={logo} />
+                            <Text>Web-Dev BootCamp</Text></Card>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <Card m={2} sx={{ height: "200px", width: "200px" }} >HI</Card>
+                        <Card m={2} sx={{ height: "200px", width: "200px" }} >
+                            <Image src={logo} />
+                            <Text>Web-Dev BootCamp</Text></Card>
                     </SwiperSlide>
                 </Flex>
             </Swiper>
