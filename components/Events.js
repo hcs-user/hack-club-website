@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, Container, Flex, Text } from 'theme-ui'
+import { Box, Card, Container, Flex, Text } from 'theme-ui'
 import Image from 'next/image'
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -9,14 +9,15 @@ const logo = require('../assets/logo.png');
 export default function Events() {
 
     return (
-        <Container p={2} m={4} mb={6}>
+        <Container p={2} mb={6} sx={{textAlign:'center',display:'flex',justifyContent:'center'}}>
+            <Box>
             <Text sx={{ fontSize: "4rem" }}>Events </Text>
             <Swiper
                 spaceBetween={40}
                 slidesPerView={3.4}
                 breakpoints={{
                     280: {
-                        slidesPerView: 1.4,
+                        slidesPerView: 1.5,
                     },
                     620: {
                         slidesPerView: 2.4,
@@ -62,6 +63,7 @@ export default function Events() {
                     </SwiperSlide>
                 </Flex>
             </Swiper>
+            </Box>
         </Container>
     )
 }

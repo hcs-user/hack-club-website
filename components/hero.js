@@ -2,7 +2,7 @@ import React from 'react'
 import { Box, Flex, Container, Button } from "theme-ui"
 function Hero() {
     return (
-        <Box bg="sheet" sx={{ height: '91vh', }}>
+        <Box m={0} bg="sheet" sx={{ height: '91vh', }}>
             <Container sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                 <Box
                     sx={{

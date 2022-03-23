@@ -26,7 +26,9 @@ export default function Navbar() {
       <Box
         p={3}
         bg="sheet"
-        sx={{ display: 'flex', justifyContent: 'flex-end', alignItems: "center", fontSize: '18px' }}
+        sx={{ display: 'flex', justifyContent: 'flex-end', 
+        borderBottom:'1px solid grey',
+        alignItems: "center", fontSize: '18px' }}
       >
         <Box
           sx={{
@@ -63,7 +65,7 @@ export default function Navbar() {
           width: '200px',
           position: 'absolute',
           top: "12%",
-          right: "15%",
+          right: "10%",
           backgroundColor: 'sunken',
           padding: '4',
           borderRadius: '5px'

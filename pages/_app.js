@@ -5,7 +5,7 @@ import Meta from '@hackclub/meta'
 
 // import '@hackclub/theme/fonts/reg-bold.css'
 import theme from '@hackclub/theme'
-import { ThemeProvider } from 'theme-ui'
+import { Container, ThemeProvider } from 'theme-ui'
 import ColorSwitcher from '../components/color-switcher'
 import Navbar from '../components/Navbar'
 import Gallery from '../components/Gallery'
@@ -22,11 +22,11 @@ export default class App extends NextApp {
       <ThemeProvider theme={theme}>
         <ColorSwitcher />
         <Navbar />
-        <Component {...pageProps}/>
+        <Component {...pageProps} />
         {/* <Gallery></Gallery> */}
+        <About></About>
         <Events></Events>
         <Gallery></Gallery>
-        <About></About>
       </ThemeProvider>
     )
   }
