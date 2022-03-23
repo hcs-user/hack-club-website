@@ -8,27 +8,33 @@ import team_icon from '../Assets/team.png'
 import gallery_icon from '../Assets/gallery.png'
 import { useState } from 'react'
 export default function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
   let COUNTER = 0;
-  const showNav = () => {
-    // COUNTER++;
-    const nav = document.getElementById('nav-bar');
-    if (COUNTER === 0) {
-      nav.style.display = "block";
-      COUNTER++;
-    }
-    else {
-      nav.style.display = "none";
-      COUNTER--;
-    }
-  }
+  // const showNav = () => {
+  //   // // COUNTER++;
+  //   // const nav = document.getElementById('nav-bar');
+  //   // if (COUNTER === 0) {
+  //   //   nav.style.display = "block";
+  //   //   COUNTER++;
+  //   // }
+  //   // else {
+  //   //   nav.style.display = "none";
+  //   //   COUNTER--;
+  //   // }
+  // }
   return (
     <div>
       <Box
         p={3}
         bg="sheet"
-        sx={{ display: 'flex', justifyContent: 'flex-end', 
-        borderBottom:'1px solid grey',
-        alignItems: "center", fontSize: '18px' }}
+        sx={{
+          position:'fixed',
+          width:'100%',
+          zIndex:5,
+          display: 'flex', justifyContent: 'flex-end',
+          borderBottom: '1px solid grey',
+          alignItems: "center", fontSize: '18px'
+        }}
       >
         <Box
           sx={{
@@ -54,21 +60,20 @@ export default function Navbar() {
             height={50}
             alt="Picture of the author"
           />
-          <Box onClick={showNav} sx={{
+          <Box onClick={() => setIsOpen(!isOpen)} sx={{
             display: "none", '@media (max-width:426px)': {
               display: 'block',
             },
           }}>Menu </Box>
         </Box>
         <Box id='nav-bar' sx={{
-          display: 'none',
-          width: '200px',
+          display: (isOpen ? "block" : "none"),
+          width: '120px',
           position: 'absolute',
           top: "12%",
           right: "10%",
           backgroundColor: 'sunken',
-          padding: '4',
-          borderRadius: '5px'
+          borderRadius: '8px',textAlign:'center'
         }}>
           <Box sx={{ display: 'flex', flexDirection: 'column' }}>
             <NavLink m={2}>Home</NavLink>

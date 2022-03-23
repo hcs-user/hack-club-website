@@ -20,7 +20,6 @@ export default class App extends NextApp {
     return (
 
       <ThemeProvider theme={theme}>
-        <ColorSwitcher />
         <Navbar />
         <Component {...pageProps} />
         {/* <Gallery></Gallery> */}
