@@ -1,4 +1,4 @@
-import { NavLink, Flex, Text, Box } from 'theme-ui'
+import { NavLink, Flex, Text, Box, Card } from 'theme-ui'
 import Image from 'next/image'
 import logo from '../Assets/logo.png'
 import home_icon from '../Assets/home.svg'
@@ -6,13 +6,27 @@ import about_icon from '../Assets/about.svg'
 import events_icon from '../Assets/events.png'
 import team_icon from '../Assets/team.png'
 import gallery_icon from '../Assets/gallery.png'
+import { useState } from 'react'
 export default function Navbar() {
+  let COUNTER = 0;
+  const showNav = () => {
+    // COUNTER++;
+    const nav = document.getElementById('nav-bar');
+    if (COUNTER === 0) {
+      nav.style.display = "block";
+      COUNTER++;
+    }
+    else {
+      nav.style.display = "none";
+      COUNTER--;
+    }
+  }
   return (
     <div>
       <Box
         p={3}
         bg="sheet"
-        sx={{ display: 'flex', justifyContent: 'flex-end', fontSize: '18px' }}
+        sx={{ display: 'flex', justifyContent: 'flex-end', alignItems: "center", fontSize: '18px' }}
       >
         <Box
           sx={{
@@ -20,14 +34,15 @@ export default function Navbar() {
             width: '50%',
             ml: '5%',
             fontSize: '28px',
-            justifyContent: 'flex-start',
+            justifyContent: 'space-between',
             alignItems: 'center',
             color: "theme.util.gxText('sheet', 'primary')",
             '@media (max-width:426px)': {
               ml: 0,
               width: '100%',
-              justifyContent: 'center',
-              alignContent: 'center'
+              justifyContent: 'space-between',
+              alignContent: 'center',
+              padding: '0 12px'
             },
           }}
         >
@@ -37,6 +52,29 @@ export default function Navbar() {
             height={50}
             alt="Picture of the author"
           />
+          <Box onClick={showNav} sx={{
+            display: "none", '@media (max-width:426px)': {
+              display: 'block',
+            },
+          }}>Menu </Box>
+        </Box>
+        <Box id='nav-bar' sx={{
+          display: 'none',
+          width: '200px',
+          position: 'absolute',
+          top: "12%",
+          right: "15%",
+          backgroundColor: 'sunken',
+          padding: '4',
+          borderRadius: '5px'
+        }}>
+          <Box sx={{ display: 'flex', flexDirection: 'column' }}>
+            <NavLink m={2}>Home</NavLink>
+            <NavLink m={2}>About</NavLink>
+            <NavLink m={2}>Events</NavLink>
+            <NavLink m={2}>Gallery</NavLink>
+            <NavLink m={2}>Team</NavLink>
+          </Box>
         </Box>
         <Box
           sx={{
@@ -58,78 +96,7 @@ export default function Navbar() {
         </Box>
       </Box>
       <div >
-        <Box sx={{
-          display: "none",
-          '@media (max-width:426px)': {
-            display: "flex",
-            position: "absolute",
-            bg: "rgba(255,255,255,0.30)",
-            height: "7vh",
-            bottom: "0",
-            position: "fixed",
-            color: "accent",
-            left: "2",
-            right: "2",
-            borderRadius: "10px"
 
-
-          },
-
-        }}>
-          <Flex sx={{
-            justifyContent: "space-around",
-            width: "100vw",
-            fontSize: "18px",
-            paddingInline: "10px",
-            fontSize: "13px",
-            fontWeight: "500"
-          }}>
-            <Flex sx={{ flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
-              <Image
-                src={home_icon}
-                width={30}
-                height={30}
-                alt="Picture of the author"
-              /><Text sx={{ fontSize: "15px" }}>Home</Text>
-            </Flex>
-            <Flex sx={{ flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
-              <Image
-                src={about_icon}
-                width={30}
-                height={30}
-                sx={{ color: "smoke" }}
-                alt="Picture of the author"
-              />About
-            </Flex>
-            <Flex sx={{ flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
-              <Image
-                src={events_icon}
-                width={30}
-                height={30}
-                sx={{ color: "smoke" }}
-                alt="Picture of the author"
-              />Events
-            </Flex>
-            <Flex sx={{ flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
-              <Image
-                src={team_icon}
-                width={30}
-                height={30}
-                sx={{ color: "smoke" }}
-                alt="Picture of the author"
-              />Team
-            </Flex>
-            <Flex sx={{ flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
-              <Image
-                src={gallery_icon}
-                width={30}
-                height={30}
-                sx={{ color: "smoke" }}
-                alt="Picture of the author"
-              />Gallery
-            </Flex>
-          </Flex>
-        </Box>
       </div>
     </div >
   )
