@@ -25,10 +25,15 @@ import theme from '@hackclub/theme'
 import ColorSwitcher from '../components/color-switcher'
 import Navbar from '../components/Navbar'
 import Router from 'next/dist/server/router'
-import React, { useRef, useState } from "react";
+import { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import Image from 'next/image';
+import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
+import 'swiper/css';
 
 // Import Swiper styles
 import "swiper/css";
@@ -44,41 +49,26 @@ import { EffectFade, Navigation, Pagination } from "swiper";
 
 function Gallery() {
     return <div>
-        <Flex sx={{
-            flexDirection: "row",
-            justifyContent: "center",
-            m: "auto"
-        }}>
-            <Container sx={{ maxHeight: "50vw !important", fontSize: "2rem", textAlign: 'center', borderRadius: "5px", padding: "20px" }} bg={'sheet'} b>
-                <Text backgroundColor={'primary'} p={2} sx={{ borderRadius: "15px" }}>A Glance of Hack Club SVIT</Text>
+        <Container mt={2} p={4} mb={2} backgroundColor={'sheet'} sx={{ height: '80vh', borderRadius: '5px', textAlign: 'center', fontSize: '2rem' }}>
 
-                <Box mt={4}>
-                    <Swiper
-                        spaceBetween={10}
-                        effect={"fade"}
-                        navigation={true}
-                        pagination={{
-                            clickable: true,
-                        }}
-                        modules={[EffectFade, Navigation, Pagination]}
-                        className="mySwiper"
-                    >
-                        <SwiperSlide>
-                            <Image src={logo} w={[60, 55, 80]} border={['1px solid red', '1px solid green', '1px solid blue']} h="auto" />
-                        </SwiperSlide>
-                        <SwiperSlide >
-                            <Image src={logo} />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <Image src={logo} />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <Image src={logo} />
-                        </SwiperSlide>
-                    </Swiper>
-                </Box>
-            </Container>
-        </Flex>
+            <Text p={2} sx={{ borderRadius: '8px', color: 'primary' }}>A Glance AT Hack Club SVIT</Text>
+            <Box>
+                <Carousel>
+                    <div>
+                        <img src="assets/1.jpeg" />
+                        <p className="legend">Legend 1</p>
+                    </div>
+                    <div>
+                        <img src="assets/2.jpeg" />
+                        <p className="legend">Legend 2</p>
+                    </div>
+                    <div>
+                        <img src="assets/3.jpeg" />
+                        <p className="legend">Legend 3</p>
+                    </div>
+                </Carousel>
+            </Box>
+        </Container>
     </div>;
 }
 
