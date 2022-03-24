@@ -39,8 +39,6 @@ export default function Events() {
                             <Card m={2} sx={{
                                 height: "240px",
                                 width: "200px",
-                                border: '4px solid purple',
-                                boxShadow: '0 0 10px 1px purple',
                             }} >
                                 <Image src={logo} />
                                 <Text >HacktoberFest</Text>
