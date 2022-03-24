@@ -4,6 +4,16 @@ import logo from '../Public/logo.png'
 
 import { useState } from 'react'
 import ColorSwitcher from './color-switcher';
+const Navitem = ({ Link }) => {
+  return (
+    <NavLink>
+      <Text sx={{
+        fontSize: '1.5rem',
+        fontWeight: "400",
+        fontStyle: 'normal',
+      }}>{Link}</Text></NavLink>
+  )
+}
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   let COUNTER = 0;
@@ -19,27 +29,27 @@ export default function Navbar() {
   //   //   COUNTER--;
   //   // }
   // }
+  const Links = ['Home', 'About', 'Events', 'Gallery', 'Team'];
+
   return (
     <div>
       <Box
-        py={3}
-        bg="white"
         sx={{
           position: 'fixed',
           width: '100%',
           zIndex: 5,
-          display: 'flex', justifyContent: 'flex-end',
+          display: 'flex',
+          justifyContent: 'flex-start',
           borderBottom: '1px solid grey',
           alignItems: "center", fontSize: '18px',
-          backdropFilter:'blur(10px)',
-
+          backdropFilter: 'blur(5px)',
         }}
       >
         <Box
           sx={{
             display: 'flex',
-            width: '20%',
-            ml: 6,
+            width: '30%',
+            ml: 4,
             fontSize: '28px',
             justifyContent: 'space-between',
             alignItems: 'center',
@@ -58,40 +68,42 @@ export default function Navbar() {
             height={90}
             alt="Picture of the author"
           />
-        <ColorSwitcher/>
+          <ColorSwitcher />
 
           <Box onClick={() => setIsOpen(!isOpen)} sx={{
             display: "none", '@media (max-width:426px)': {
               display: 'block',
+              marginRight: "15%"
             },
           }}>Menu </Box>
         </Box>
         <Box sx={{
           display: (isOpen ? "block" : "none"),
-          margin: 1,
-          width: '120px',
+          width: '100%',
+          height: '100vh',
           position: 'absolute',
           top: "100%",
-          right: "10%",
           backgroundColor: 'sunken',
-          borderRadius: '8px', textAlign: 'center'
+          textAlign: 'center'
         }}>
 
-          <Box sx={{ display: 'flex', flexDirection: 'column' }}>
-            <NavLink m={2}>Home</NavLink>
-            <NavLink m={2}>About</NavLink>
-            <NavLink m={2}>Events</NavLink>
-            <NavLink m={2}>Gallery</NavLink>
-            <NavLink m={2}>Team</NavLink>
+          <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-around', height: "100%",  }}>
+            {
+              Links && Links.map((Link) => {
+                return (
+                  <Navitem Link={Link} />
+                )
+              })
+            }
           </Box>
         </Box>
         <Box
           sx={{
-            width: '80%',
+            width: '40%',
             padding: '0 15px',
             display: 'flex',
             color: "primary",
-            fontSize: "1.8rem",
+            fontSize: "1.1rem",
             justifyContent: 'space-evenly',
             transition: 'all 0.2s ease-in-out',
             '@media (max-width:426px)': {
@@ -99,11 +111,13 @@ export default function Navbar() {
             },
           }}
         >
-          <NavLink>Home</NavLink>
-          <NavLink>About</NavLink>
-          <NavLink>Events</NavLink>
-          <NavLink>Gallery</NavLink>
-          <NavLink>Team</NavLink>
+          {
+            Links && Links.map((Link) => {
+              return (
+                <Navitem Link={Link} />
+              )
+            })
+          }
         </Box>
       </Box>
       <div >

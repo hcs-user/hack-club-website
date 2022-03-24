@@ -24,6 +24,7 @@ import Meta from '@hackclub/meta'
 import theme from '@hackclub/theme'
 import ColorSwitcher from '../components/color-switcher'
 import Hero from '../components/hero'
+
 const DocsPage = () => (
   <>
     <Head>
@@ -45,7 +46,6 @@ const DocsPage = () => (
      
       </Container>
     </Box> */}
-
     <Hero />
   </>
 )

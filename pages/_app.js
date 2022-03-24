@@ -12,6 +12,7 @@ import Gallery from '../components/Gallery'
 import Events from '../components/Events'
 import About from '../components/About'
 import Hero from '../components/hero'
+import "../components/hero.css";
 
 export default class App extends NextApp {
   render() {
@@ -21,7 +22,8 @@ export default class App extends NextApp {
 
       <ThemeProvider theme={theme}>
         <Navbar />
-        <Component {...pageProps} />
+        {/* <Component {...pageProps} /> */}
+        <Hero/>
         {/* <Gallery></Gallery> */}
         <About></About>
         <Events></Events>
