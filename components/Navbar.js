@@ -22,8 +22,8 @@ export default function Navbar() {
   return (
     <div>
       <Box
-        p={3}
-        bg="transperent"
+        py={3}
+        bg="white"
         sx={{
           position: 'fixed',
           width: '100%',
@@ -38,8 +38,8 @@ export default function Navbar() {
         <Box
           sx={{
             display: 'flex',
-            width: '50%',
-            ml: '5%',
+            width: '20%',
+            ml: 6,
             fontSize: '28px',
             justifyContent: 'space-between',
             alignItems: 'center',
@@ -49,14 +49,13 @@ export default function Navbar() {
               width: '100%',
               justifyContent: 'space-between',
               alignContent: 'center',
-              padding: '0 12px'
             },
           }}
         >
           <Image
             src={logo}
-            width={50}
-            height={50}
+            width={90}
+            height={90}
             alt="Picture of the author"
           />
         <ColorSwitcher/>
@@ -88,9 +87,11 @@ export default function Navbar() {
         </Box>
         <Box
           sx={{
-            width: '50%',
+            width: '80%',
             padding: '0 15px',
             display: 'flex',
+            color: "primary",
+            fontSize: "1.8rem",
             justifyContent: 'space-evenly',
             transition: 'all 0.2s ease-in-out',
             '@media (max-width:426px)': {
