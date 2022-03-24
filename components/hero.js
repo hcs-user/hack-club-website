@@ -1,6 +1,6 @@
 import React from 'react'
 import { Box, Flex, Container, Button, Text, Heading, Card } from "theme-ui"
-import logo from '../Public/hero.gif'
+// import logo from '../Public/hero.gif'
 import Image from 'next/image'
 import theme from '@hackclub/theme'
 import { themed } from '@theme-ui/mdx'
@@ -10,11 +10,10 @@ function Hero() {
         //     <Image src={logo}></Image>
         //     <h1>Welcome To <br/>Hack Club SVIt</h1>
         // </div>
-        <Container sx={{
-            backgroundImage: 'url(/hero.gif)',
+        <Container   sx={{
+            backgroundImage: 'url(hero.gif)',
             minHeight: '100vh',
             minWidth: '100%',
-
         }}>
             <Flex
                 sx={{
