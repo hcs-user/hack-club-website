@@ -32,7 +32,7 @@ function Hero() {
                         sx={{ fontSize: [5, 7], color: 'white', "-webkit-text-fill-color": "transparent", "-webkit-text-stroke-width": "3px" }}>
                         Hack Club SVIT</Text></Heading>
                 <Text color={'primary'} sx={{ fontSize: '2rem', fontWeight: '500', mt: "4" }}>Code Collabrate Conquer</Text>
-                <Button sx={{  position:"absolute", variant: "buttons.ctaLg", padding: "4",bottom:'5' }}>Join Our Community</Button>
+                <Button sx={{ position: "absolute", variant: "buttons.ctaLg", padding: "4", bottom: '5' }}>Join Our Community</Button>
             </Flex>
         </Container>
     )
