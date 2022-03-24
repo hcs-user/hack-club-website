@@ -10,8 +10,8 @@ function Hero() {
         //     <Image src={logo}></Image>
         //     <h1>Welcome To <br/>Hack Club SVIt</h1>
         // </div>
-        <Container   sx={{
-            backgroundImage: 'url(hero.gif)',
+        <Container sx={{
+            backgroundImage: 'url(/hero.gif)',
             minHeight: '100vh',
             minWidth: '100%',
         }}>
