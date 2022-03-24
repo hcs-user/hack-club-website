@@ -21,6 +21,7 @@ function Hero() {
                     justifyContent: 'center',
                     alignItems: "center",
                     textAlign: 'center',
+                    
                     minHeight: "100vh"
                 }}>
                 <Heading sx={{
