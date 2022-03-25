@@ -1,9 +1,8 @@
 import { NavLink, Flex, Text, Box, Card } from 'theme-ui'
 import Image from 'next/image'
-import logo from '../public/logo.png'
-
 import { useState } from 'react'
 import ColorSwitcher from './color-switcher';
+
 const Navitem = ({ Link }) => {
   return (
     <NavLink>
@@ -44,6 +43,7 @@ export default function Navbar() {
           borderColor:'primary',
           alignItems: "center", fontSize: '18px',
           backdropFilter: 'blur(5px)',
+          p: '2'
         }}
       >
         <Box
@@ -64,7 +64,7 @@ export default function Navbar() {
           }}
         >
           <Image
-            src={logo}
+            src={'/new.png'}
             alt="Picture of the author"
             width={50}
             height={50}
