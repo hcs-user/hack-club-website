@@ -57,20 +57,7 @@ function Gallery() {
 
             <Text p={2} sx={{ borderRadius: '8px', color: 'primary' }}>A Glance AT Hack Club SVIT</Text>
             <Box>
-                <Carousel>
-                    <div>
-                        <img src="/1.png" h />
-                        <p className="legend">Legend 1</p>
-                    </div>
-                    <div>
-                        <img src="/2.jpg" />
-                        <p className="legend">Legend 2</p>
-                    </div>
-                    <div>
-                        <img src="/1.png" />
-                        <p className="legend">Legend 3</p>
-                    </div>
-                </Carousel>
+               
             </Box>
         </Container>
     </div>;

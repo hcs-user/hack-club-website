@@ -40,7 +40,8 @@ export default function Navbar() {
           zIndex: 5,
           display: 'flex',
           justifyContent: 'flex-start',
-          borderBottom: '1px solid grey',
+          borderBottom: '1px solid',
+          borderColor:'primary',
           alignItems: "center", fontSize: '18px',
           backdropFilter: 'blur(5px)',
         }}
