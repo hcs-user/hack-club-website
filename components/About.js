@@ -9,7 +9,7 @@ function About() {
       </Box>
       <Box sx={{ textAlign: 'center', fontSize: ['1.5rem', '2.5rem'], }}>
         We At <Text bg={'purple'} sx={{ padding: '1px', borderRadius: '5px', color: 'white', fontWeight: "700" }}>Hack club SVIT</Text>
-        <Flex sx={{ mt: '2', flexDirection: "row", alignItems: "center", justifyContent: 'space-evenly', fontSize: '1.5rem',textAlign:'left' }}>
+        <Flex sx={{ mt: '2', flexDirection:['column','row'], alignItems: "center", justifyContent: 'space-evenly', fontSize: '1.5rem',textAlign:'left' }}>
           <Card m={2} sx={{
             padding:0
           }} >
