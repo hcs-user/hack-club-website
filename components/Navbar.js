@@ -1,6 +1,6 @@
 import { NavLink, Flex, Text, Box, Card } from 'theme-ui'
 import Image from 'next/image'
-import logo from '../Public/logo.png'
+import logo from '../public/logo.png'
 
 import { useState } from 'react'
 import ColorSwitcher from './color-switcher';
@@ -87,7 +87,7 @@ export default function Navbar() {
           textAlign: 'center'
         }}>
 
-          <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-around', height: "100%",  }}>
+          <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-around', height: "100%", }}>
             {
               Links && Links.map((Link) => {
                 return (

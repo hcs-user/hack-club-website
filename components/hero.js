@@ -1,9 +1,6 @@
 import React from 'react'
 import { Box, Flex, Container, Button, Text, Heading, Card } from "theme-ui"
-// import logo from '../Public/hero.gif'
-import Image from 'next/image'
-import theme from '@hackclub/theme'
-import { themed } from '@theme-ui/mdx'
+
 function Hero() {
     return (
         // <div className="hero">
@@ -21,7 +18,7 @@ function Hero() {
                     justifyContent: 'center',
                     alignItems: "center",
                     textAlign: 'center',
-                    
+
                     minHeight: "100vh"
                 }}>
                 <Heading sx={{

@@ -3,7 +3,7 @@ import { Box, Card, Container, Flex, Text } from 'theme-ui'
 import Image from 'next/image'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import theme from '@hackclub/theme';
-import logo from '../Public/logo.png'
+import logo from '../public/logo.png'
 
 // const logo = require('../assets/logo.png');
 
