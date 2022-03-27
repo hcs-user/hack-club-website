@@ -30,6 +30,8 @@ import { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Image from 'next/image';
 import React, { Component } from 'react';
+import AwesomeSlider from 'react-awesome-slider';
+import 'react-awesome-slider/dist/styles.css';
 import ReactDOM from 'react-dom';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
@@ -55,9 +57,14 @@ function Gallery() {
            fontSize: '3rem',
            fontWeight:500 }}>
 
-            <Text p={2} sx={{ borderRadius: '8px', color: 'primary' }}>A Glance AT Hack Club SVIT</Text>
-            <Box>
-               
+            <Text p={2} sx={{ color: 'primary' }}>A Glance AT Hack Club SVIT</Text>
+            <Box py={4}>
+            <AwesomeSlider>
+                <div data-src="/5.jpeg" />
+                <div data-src="/2.jpg" />
+                <div data-src="/6.jpeg" />
+                <div data-src="/5.jpeg" />
+            </AwesomeSlider>
             </Box>
         </Container>
     </div>;
