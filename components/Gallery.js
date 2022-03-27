@@ -51,10 +51,10 @@ import { EffectFade, Navigation, Pagination } from "swiper";
 
 function Gallery() {
     return <div>
-        <Container mt={2} p={4} mb={2} backgroundColor={'sheet'} sx={{ height: 'max-content',
+        <Container   mt={2} p={4} mb={2} backgroundColor={'sheet'} sx={{  height: 'max-content',
          borderRadius: '5px',
           textAlign: 'center',
-           fontSize: '3rem',
+           fontSize:['1.5rem',null,'3rem'],
            fontWeight:500 }}>
 
             <Text p={2} sx={{ color: 'primary' }}>A Glance AT Hack Club SVIT</Text>

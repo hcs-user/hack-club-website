@@ -55,7 +55,7 @@ export default function Navbar() {
             justifyContent: 'space-between',
             alignItems: 'center',
             color: "theme.util.gxText('sheet', 'primary')",
-            '@media (max-width:426px)': {
+            '@media (max-width:768px)': {
               ml: 0,
               width: '100%',
               justifyContent: 'space-between',
@@ -72,7 +72,7 @@ export default function Navbar() {
           <ColorSwitcher />
 
           <Box onClick={() => setIsOpen(!isOpen)} sx={{
-            display: "none", '@media (max-width:426px)': {
+            display: "none", '@media (max-width:768px)': {
               display: 'block',
               marginRight: "15%"
             },
@@ -84,6 +84,7 @@ export default function Navbar() {
           height: '100vh',
           position: 'absolute',
           top: "100%",
+          left:0,
           backgroundColor: 'sunken',
           textAlign: 'center'
         }}>
@@ -107,7 +108,7 @@ export default function Navbar() {
             fontSize: "1.1rem",
             justifyContent: 'space-evenly',
             transition: 'all 0.2s ease-in-out',
-            '@media (max-width:426px)': {
+            '@media (max-width:768px)': {
               display: "none"
             },
           }}
