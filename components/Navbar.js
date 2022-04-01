@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { useState } from 'react'
 import ColorSwitcher from './color-switcher';
 
-const Navitem = ({ Link }) => {
+const Navitem = ({ Link}) => {
   return (
     <NavLink>
       <Text sx={{
@@ -29,6 +29,7 @@ export default function Navbar() {
   //   // }
   // }
   const Links = ['Home', 'About', 'Events', 'Gallery', 'Team'];
+  // const Href = ['#Home', '#About', '#Events', '#Gallery', '#Team'];
 
   return (
     <div>
