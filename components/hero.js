@@ -10,20 +10,14 @@ const Popup = () => {
 }
 
 function Hero() {
-    // useEffect(() => {   
-    //     setTimeout(()=>{
-    //         alert("hi");
-    //     },1000);
-    // },[])
     return (
         <>
-
             <Container sx={{
-                backgroundImage: 'url(/new.jpg)',
+                backgroundImage: 'linear-gradient(0deg, #1B1B1B, rgba(0, 0, 0, 0.8)), url(/new.jpg)',
                 backgroundSize: 'cover',
                 minHeight: '100vh',
                 minWidth: '100%',
-                opacity: "1"
+                opacity: "1",
             }}>
                 <Flex
                     sx={{

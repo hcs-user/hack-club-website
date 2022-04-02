@@ -10,7 +10,7 @@ import logo from '../public/logo.png'
 export default function Events() {
 
     return (
-        <Container p={2} mb={6} sx={{ textAlign: 'center', display: 'flex', justifyContent: 'center' }}>
+        <Container  id="Events" p={2} mb={6} sx={{ textAlign: 'center', display: 'flex', justifyContent: 'center' }}>
             <Box >
                 <Text sx={{ fontSize: "4rem", color: 'primary', fontWeight: 500 }}>Events </Text>
                 <Swiper
