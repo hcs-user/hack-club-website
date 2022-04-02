@@ -18,13 +18,9 @@ export default class App extends NextApp {
     return (
 
       <ThemeProvider theme={theme}>
-        <Navbar />
-        {/* <Component {...pageProps} /> */}
-        <Hero />
-        {/* <Gallery></Gallery> */}
-        <About></About>
-        <Events></Events>
-        <Gallery></Gallery>
+        
+        <Component {...pageProps} />
+        
       </ThemeProvider>
     )
   }

@@ -1,11 +1,13 @@
-import { NavLink, Flex, Text, Box, Card } from 'theme-ui'
-import Image from 'next/image'
-import { useState } from 'react'
+import { NavLink, Flex, Text, Box, Card } from 'theme-ui';
+import Image from 'next/image';
+import { useState } from 'react';
 import ColorSwitcher from './color-switcher';
+import { useRouter } from "next/router";
 
-const Navitem = ({ Link}) => {
+const Navitem = ({ Link, href}) => {
+  const router = useRouter()
   return (
-    <NavLink>
+    <NavLink href={href}>
       <Text sx={{
         fontSize: '1.5rem',
         fontWeight: "400",
@@ -29,6 +31,13 @@ export default function Navbar() {
   //   // }
   // }
   const Links = ['Home', 'About', 'Events', 'Gallery', 'Team'];
+  const LinkItems = [
+    { name: "Home", href: "/" },
+    { name: "About", href: "/#about" },
+    { name: "Events", href: "/#event" },
+    { name: "Gallery", href: "/#gallery" },
+    { name: "Team", href: "/#contact" },
+  ];
   // const Href = ['#Home', '#About', '#Events', '#Gallery', '#Team'];
 
   return (
@@ -92,9 +101,9 @@ export default function Navbar() {
 
           <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-around', height: "100%", }}>
             {
-              Links && Links.map((Link) => {
+              LinkItems && LinkItems.map((Link) => {
                 return (
-                  <Navitem Link={Link} />
+                  <Navitem Link={Link.name} href={Link.href} />
                 )
               })
             }
@@ -114,13 +123,25 @@ export default function Navbar() {
             },
           }}
         >
-          {
+          {/* {
             Links && Links.map((Link) => {
               return (
                 <Navitem Link={Link} />
               )
             })
-          }
+          } */}
+          <NavLink href="#about">
+            About
+          </NavLink>
+          <NavLink href="#event">
+            Events
+          </NavLink>
+          <NavLink href="#gallery">
+            Gallery
+          </NavLink>
+          {/* <NavLink href="#team">
+            Team
+          </NavLink> */}
         </Box>
       </Box>
       <div >

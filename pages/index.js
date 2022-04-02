@@ -23,6 +23,10 @@ import Head from 'next/head'
 import Meta from '@hackclub/meta'
 import theme from '@hackclub/theme'
 import ColorSwitcher from '../components/color-switcher'
+import Navbar from '../components/Navbar'
+import Gallery from '../components/Gallery'
+import Events from '../components/Events'
+import About from '../components/About'
 import Hero from '../components/hero'
 
 const DocsPage = () => (
@@ -46,7 +50,11 @@ const DocsPage = () => (
      
       </Container>
     </Box> */}
+    <Navbar />
     <Hero />
+    <About/>
+    <Events/>
+    <Gallery/>
   </>
 )
 

@@ -51,7 +51,7 @@ import { EffectFade, Navigation, Pagination } from "swiper";
 
 function Gallery() {
     return <div>
-        <Container   mt={2} p={4} mb={2} backgroundColor={'sheet'} sx={{  height: 'max-content',
+        <Container id="gallery"  mt={2} p={4} mb={2} backgroundColor={'sheet'} sx={{  height: 'max-content',
          borderRadius: '5px',
           textAlign: 'center',
            fontSize:['1.5rem',null,'3rem'],
