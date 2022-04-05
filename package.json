@@ -21,6 +21,6 @@
     "react-icons": "^4.3.1",
     "react-responsive-carousel": "^3.2.23",
     "swiper": "^8.0.7",
-    "theme-ui": "^0.12.1"
+    "theme-ui": "^0.14.2"
   }
 }
