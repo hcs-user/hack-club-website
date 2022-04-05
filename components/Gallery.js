@@ -51,20 +51,22 @@ import { EffectFade, Navigation, Pagination } from "swiper";
 
 function Gallery() {
     return <div>
-        <Container id="gallery"  mt={2} p={4} mb={2} backgroundColor={'sheet'} sx={{  height: 'max-content',
-         borderRadius: '5px',
-          textAlign: 'center',
-           fontSize:['1.5rem',null,'3rem'],
-           fontWeight:500 }}>
+        <Container id="gallery" mt={2} p={4} mb={2} backgroundColor={'sheet'} sx={{
+            height: 'max-content',
+            borderRadius: '5px',
+            textAlign: 'center',
+            fontSize: ['1.5rem', null, '3rem'],
+            fontWeight: 500
+        }}>
 
             <Text p={2} sx={{ color: 'primary' }}>A Glance AT Hack Club SVIT</Text>
             <Box py={4}>
-            <AwesomeSlider>
-                <div data-src="/3.webp" />
-                <div data-src="/2.jpg" />
-                <div data-src="/1.jpg" />
-                <div data-src="/4.jpg" />
-            </AwesomeSlider>
+                <AwesomeSlider>
+                    <div data-src="/3.webp" />
+                    <div data-src="/2.jpg" />
+                    <div data-src="/1.jpg" />
+                    <div data-src="/4.jpg" />
+                </AwesomeSlider>
             </Box>
         </Container>
     </div>;

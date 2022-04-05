@@ -4,7 +4,7 @@ import { useState } from 'react';
 import ColorSwitcher from './color-switcher';
 import { useRouter } from "next/router";
 
-const Navitem = ({ Link, href}) => {
+const Navitem = ({ Link, href }) => {
   const router = useRouter()
   return (
     <NavLink href={href}>
@@ -50,7 +50,7 @@ export default function Navbar() {
           display: 'flex',
           justifyContent: 'flex-start',
           borderBottom: '1px solid',
-          borderColor:'primary',
+          borderColor: 'primary',
           alignItems: "center", fontSize: '18px',
           backdropFilter: 'blur(5px)',
           p: '2'
@@ -94,7 +94,7 @@ export default function Navbar() {
           height: '100vh',
           position: 'absolute',
           top: "100%",
-          left:0,
+          left: 0,
           backgroundColor: 'sunken',
           textAlign: 'center'
         }}>
@@ -145,7 +145,6 @@ export default function Navbar() {
         </Box>
       </Box>
       <div >
-
       </div>
     </div >
   )

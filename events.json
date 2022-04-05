@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "event_name": "Flutter Bootcamp",
+    "event_date": "21-10-2021"
+  },
+  {
+    "id": 2,
+    "event_name": "WebDev Bootcamp",
+    "event_date": "6-10-2021"
+  },
+  {
+    "id": 3,
+    "event_name": "Hack this Fall",
+    "event_date": "2-12-2021"
+  },
+  {
+    "id": 4,
+    "event_name": "Hack  SVIT",
+    "event_date": "29-4-2022"
+  },
+  {
+    "id": 5,
+    "event_name": "Hack this Fall",
+    "event_date": "2-12-2021"
+  }
+]

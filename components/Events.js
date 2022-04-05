@@ -1,73 +1,33 @@
 import React from 'react'
-import { Box, Card, Container, Flex, Text } from 'theme-ui'
+import { Box, Button, Card, Container, Flex, Grid, Link, Text } from 'theme-ui'
 import Image from 'next/image'
 import { Swiper, SwiperSlide } from 'swiper/react';
-import theme from '@hackclub/theme';
 import logo from '../public/logo.png'
-
-// const logo = require('../assets/logo.png');
-
+import events from "../events.json"
+import { MdOutlineDateRange } from "react-icons/md"
 export default function Events() {
-
+    console.log(events);
     return (
-        <Container  id="event" p={2} mb={6} sx={{ textAlign: 'center', display: 'flex', justifyContent: 'center' }}>
+        <Container id="event" p={2} mb={6} sx={{ textAlign: 'center', display: 'flex', justifyContent: 'center' }}>
             <Box >
-                <Text sx={{ fontSize: "4rem", color: 'primary', fontWeight: 500 }}>Events </Text>
-                <Swiper
-                    spaceBetween={40}
-                    slidesPerView={3.4}
-                    breakpoints={{
-                        280: {
-                            slidesPerView: 1.5,
-                        },
-                        620: {
-                            slidesPerView: 2.4,
-                        },
-                        720: {
-                            slidesPerView: 3.2,
-                        },
-                        960: {
-                            slidesPerView: 4.2,
-                        },
-                        1150: {
-                            slidesPerView: 4.4,
-                        },
-                    }}
-                >
-                    <Flex fontSize={'2rem'} sx={{ flexDirection: 'row', justifyContent: 'space-between', textAlign: 'center' }}>
-                        <SwiperSlide>
-                            <Card m={2} sx={{
-                                height: "240px",
-                                width: "200px",
-                            }} >
+                <Text sx={{ fontSize: "4rem", color: 'primary', fontWeight: 500 }}>
+                    Events
+                </Text>
+                <Grid gap={4} columns={[1, null, 4]}>
+                    {
+                        events && events.map(el => {
+                            return <Card m={2} sx={{ height: "auto", width: "200px" }} >
                                 <Image src={logo} />
-                                <Text >HacktoberFest</Text>
+                                <Box marginLeft={["-50", null, "-15px"]} sx={{ textAlign: "left", width: "max-content" }}>
+                                    <Text>{el.event_name}</Text><br />
+                                    <MdOutlineDateRange /><Text sx={{ fontSize: '14px' }}>{el.event_date}</Text>
+                                </Box>
                             </Card>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <Card m={2} sx={{ height: "240px", width: "200px" }} >
-                                <Image src={logo} />
-                                <Text>Flutter BootCamp</Text>
-                            </Card>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <Card m={2} sx={{ height: "240px", width: "200px" }} >
-                                <Image src={logo} />
-                                <Text>Web-Dev BootCamp</Text></Card>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <Card m={2} sx={{ height: "240px", width: "200px" }} >
-                                <Image src={logo} />
-                                <Text>Web-Dev BootCamp</Text></Card>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <Card m={2} sx={{ height: "240px", width: "200px" }} >
-                                <Image src={logo} />
-                                <Text>Web-Dev BootCamp</Text></Card>
-                        </SwiperSlide>
-                    </Flex>
-                </Swiper>
+                        })
+                    }
+                </Grid>
             </Box>
         </Container>
     )
+
 }
