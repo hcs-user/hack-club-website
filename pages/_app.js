@@ -9,7 +9,7 @@ import Gallery from '../components/Gallery'
 import Events from '../components/Events'
 import About from '../components/About'
 import Hero from '../components/hero'
-import "../components/hero.css";
+import "../components/main.css";
 
 export default class App extends NextApp {
   render() {

@@ -28,7 +28,6 @@ import Gallery from '../components/Gallery'
 import Events from '../components/Events'
 import About from '../components/About'
 import Hero from '../components/hero'
-
 const DocsPage = () => (
   <>
     <Head>
@@ -52,9 +51,9 @@ const DocsPage = () => (
     </Box> */}
     <Navbar />
     <Hero />
-    <About/>
-    <Events/>
-    <Gallery/>
+    <About />
+    <Events />
+    <Gallery />
   </>
 )
 
