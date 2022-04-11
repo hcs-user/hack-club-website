@@ -13,9 +13,9 @@ export default function Events() {
             <Box bg={'aliceblue'} sx={{
                 position: "fixed",
                 top: (isModalOPen ? "15%" : "-100%"),
-                left:["5%","35%","25%"],
-                width:["100%","50%"],
-                maxWidth:"90%",
+                left: ["5%", "35%", "25%"],
+                width: ["100%", "50%"],
+                maxWidth: "90%",
                 height: "auto",
                 borderRadius: "5px",
                 padding: "25px",
@@ -28,19 +28,17 @@ export default function Events() {
                     width: "100%",
                     justifyContent: "space-between",
                     alignItems: "center",
-                    // outline: "2px solid red"
-                    textAlign: "center"
+                    color:"primary"
                 }}>
                     {events[id].event_name}
                     <div onClick={() => setIsModalOpen(false)}> <MdClose /></div>
                 </Heading><br />
-                <h2> Date:{events[id].event_date}</h2>
+                <h2><MdOutlineDateRange/> Date:{events[id].event_date}</h2>
                 <br />
                 <h2>
                     What We have done in {events[id].event_name}
                 </h2>
                 <h3>
-
                     {events[id].desc}
                 </h3>
             </Box>
@@ -72,6 +70,4 @@ export default function Events() {
             </Container>
         </>
     )
-
-
 }
