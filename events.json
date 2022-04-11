@@ -8,21 +8,25 @@
   {
     "id": 1,
     "event_name": "WebDev Bootcamp",
-    "event_date": "6-10-2021"
+    "event_date": "6-10-2021",
+    "desc": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus accusantium tempora voluptates totam modi, perspiciatis dolore deserunt, voluptatibus omnis illo nesciunt cupiditate aliquid neque et sapiente obcaecati dolorum. Vero, optio."
   },
   {
     "id": 2,
     "event_name": "Hack this Fall",
-    "event_date": "2-12-2021"
+    "event_date": "2-12-2021",
+    "desc": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus accusantium tempora voluptates totam modi, perspiciatis dolore deserunt, voluptatibus omnis illo nesciunt cupiditate aliquid neque et sapiente obcaecati dolorum. Vero, optio."
   },
   {
     "id": 3,
     "event_name": "Hack  SVIT",
-    "event_date": "29-4-2022"
+    "event_date": "29-4-2022",
+    "desc": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus accusantium tempora voluptates totam modi, perspiciatis dolore deserunt, voluptatibus omnis illo nesciunt cupiditate aliquid neque et sapiente obcaecati dolorum. Vero, optio."
   },
   {
     "id": 4,
     "event_name": "Hack this Fall",
-    "event_date": "2-12-2021"
+    "event_date": "2-12-2021",
+    "desc": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus accusantium tempora voluptates totam modi, perspiciatis dolore deserunt, voluptatibus omnis illo nesciunt cupiditate aliquid neque et sapiente obcaecati dolorum. Vero, optio."
   }
 ]
