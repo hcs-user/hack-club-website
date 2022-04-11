@@ -8,7 +8,7 @@ import { MdOutlineDateRange } from "react-icons/md"
 import { useState } from 'react';
 export default function Events() {
     const [isModalOPen, setIsModalOpen] = useState(false);
-    const [id, setId] = useState();
+    const [id, setId] = useState(0);
     return (
         <>
             <Box bg={'white'} sx={{
@@ -23,7 +23,10 @@ export default function Events() {
                 transition: "all 0.2s ease-in-out"
             }}>
                 <Text onClick={() => setIsModalOpen(false)}>Close</Text><br />
-                <Text>ID is :{id}</Text>
+                <Text>ID is :{id}</Text><br />
+                {events[id].event_name}<br />
+                {events[id].event_date} <br />
+                {events[id].desc}
             </Box>
             <Container id="event" p={2} mb={6} sx={{ textAlign: 'center', display: 'flex', justifyContent: 'center' }}>
                 <Box >
