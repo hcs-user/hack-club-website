@@ -12,7 +12,7 @@ export default function Events() {
         <>
             <Box bg={'aliceblue'} sx={{
                 position: "fixed",
-                top: (isModalOPen ? "15%" : "-60%"),
+                top: (isModalOPen ? "15%" : "-100%"),
                 left:["5%","35%","25%"],
                 width:["100%","50%"],
                 maxWidth:"90%",
