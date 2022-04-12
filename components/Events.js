@@ -28,19 +28,19 @@ export default function Events() {
                     width: "100%",
                     justifyContent: "space-between",
                     alignItems: "center",
-                    color:"primary"
+                    color: "primary",
                 }}>
                     {events[id].event_name}
                     <div onClick={() => setIsModalOpen(false)}> <MdClose /></div>
                 </Heading><br />
-                <h2><MdOutlineDateRange/> Date:{events[id].event_date}</h2>
+                <h3><MdOutlineDateRange /> Date:{events[id].event_date}</h3>
                 <br />
-                <h2>
-                    What We have done in {events[id].event_name}
-                </h2>
                 <h3>
-                    {events[id].desc}
+                    What We have done in {events[id].event_name}
                 </h3>
+                <h4>
+                    {events[id].desc}
+                </h4>
             </Box>
             <Container id="event" p={2} mb={6} sx={{
                 textAlign: 'center',
