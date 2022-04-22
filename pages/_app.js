@@ -1,15 +1,10 @@
-import * as React from 'react'
-import NextApp from 'next/app'
-import Head from 'next/head'
-import Meta from '@hackclub/meta'
 import theme from '@hackclub/theme'
-import { Container, ThemeProvider } from 'theme-ui'
+import NextApp from 'next/app'
+import * as React from 'react'
+import { ThemeProvider } from 'theme-ui'
+import Footer from '../components/Footer'
+import "../components/main.css"
 import Navbar from '../components/Navbar'
-import Gallery from '../components/Gallery'
-import Events from '../components/Events'
-import About from '../components/About'
-import Hero from '../components/hero'
-import "../components/main.css";
 
 export default class App extends NextApp {
   render() {
@@ -20,6 +15,7 @@ export default class App extends NextApp {
       <ThemeProvider theme={theme}>
         <Navbar />
         <Component {...pageProps} />
+        <Footer />
       </ThemeProvider>
     )
   }
