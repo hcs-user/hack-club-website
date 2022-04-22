@@ -6,7 +6,7 @@ function About() {
       id="about"
       p={2}
       mb={4}
-      mt={4}
+      mt={[6,4]}
       bg={'sheet'}
       sx={{
         borderRadius: "8px",

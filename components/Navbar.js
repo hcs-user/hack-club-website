@@ -25,7 +25,10 @@ export default function Navbar() {
     { name: "Gallery", href: "/#gallery" },
     { name: "Team", href: "/#contact" },
   ];
-
+  const Navigate = () => {
+    setIsOpen(false);
+    router.push("/");
+  }
   return (
     <div>
       <Box
@@ -80,20 +83,27 @@ export default function Navbar() {
           height: '100vh',
           position: 'absolute',
           top: "100%",
-          transition:"all 0.2s ease",
+          transition: "all 0.2s ease",
           left: (isOpen ? 0 : "-100%"),
           backgroundColor: 'sunken',
           textAlign: 'center'
         }}>
 
           <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-evenly', height: "100%", }}>
-            {
-              LinkItems && LinkItems.map((Link) => {
-                return (
-                  <Navitem Link={Link.name} href={Link.href} />
-                )
-              })
-            }
+
+            <NavLink href='#about' onClick={Navigate}>
+              About
+            </NavLink>
+            <NavLink href='#event' onClick={Navigate}>
+              Events
+            </NavLink>
+            <NavLink href='#gallery' onClick={Navigate}>
+              Gallery
+            </NavLink>
+            <NavLink onClick={() => { router.push('/team'); setIsOpen(false) }}>
+              Team
+            </NavLink>
+
           </Box>
         </Box>
         <Box
