@@ -147,7 +147,7 @@ function Footer() {
           />
         </Box>
         <Box>
-          <Text sx={{ color: '#fff' }}>
+          <Text sx={{ }}>
             © 2022, Hack Club SVIT. All rights reserved.
           </Text>
         </Box>
