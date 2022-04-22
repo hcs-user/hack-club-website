@@ -31,7 +31,7 @@ function Team() {
                                 justifyContent: ['center', 'center', 'flex-start'],
                                 alignItems: 'center',
                                 flexWrap: ['nowrap', 'wrap', 'wrap'],
-                                border: '2px solid white',
+                                // border: '2px solid white',
                             }}>
                             {el.members.map((member) => (
                                 <Box margin={4} sx={{
