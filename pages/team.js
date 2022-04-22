@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import { Box, Card, Container, Flex, Grid, Heading, Text } from 'theme-ui'
+import { Box, Container, Flex, Text } from 'theme-ui'
 import team from "../components/data/team.json"
 function Team() {
     return (
@@ -27,18 +27,19 @@ function Team() {
                         </Flex>
                         <Flex
                             sx={{
-                                flexDirection: ['column', ['row']],
-                                justifyContent: 'center',
+                                flexDirection: ['column', 'column', 'row'],
+                                justifyContent: ['center', 'center', 'flex-start'],
                                 alignItems: 'center',
-
+                                flexWrap: ['nowrap', 'wrap', 'wrap'],
+                                border: '2px solid white',
                             }}>
                             {el.members.map((member) => (
                                 <Box margin={4} sx={{
-                                    width: ["90%"],
-                                    border: '2px solid white',
+                                    width: 'max-content',
+                                    minWidth: ["100%", "45%", "18%"],
+                                    border: '2px solid #fc5c7d',
                                     borderRadius: 12,
                                     padding: 3,
-                                    paddingBlock: 12,
                                     backgroundColor: 'sheet',
                                 }}>
                                     <Flex sx={{
@@ -47,7 +48,7 @@ function Team() {
                                         alignItems: ['center', null]
                                     }}>
 
-                                        <Image src={member.img} width={'100%'} height={'100%'} objectFit={'contain'} />
+                                        <Image src={member.img} width={'100%'} height={'100%'} objectFit={'contain'} borderRadius="5" />
                                         <Text
                                             sx={{
                                                 fontSize: [28, 24],
