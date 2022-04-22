@@ -3,6 +3,7 @@ import About from '../components/About'
 import Events from '../components/Events'
 import Gallery from '../components/Gallery'
 import Hero from '../components/hero'
+import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 function Main() {
     return (
@@ -11,6 +12,7 @@ function Main() {
             <About />
             <Events />
             <Gallery />
+            <Footer />
         </>
     )
 }

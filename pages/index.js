@@ -37,6 +37,14 @@ const DocsPage = () => (
       <title>Hack Club SVIT</title>
       <Meta name="Hack Club SVIT" description="HacK Club SVIT Website" />
     </Head>
+    <style jsx global>{`
+      *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        scroll-behavior: smooth;
+      }
+    `}</style>
     {/* <Box as="header" sx={{ bg: 'sheet', color: 'text' }}>
       <Container sx={{ pt: 5, pb: [3, 4], textAlign: 'center' }}>
         <ColorSwitcher />
