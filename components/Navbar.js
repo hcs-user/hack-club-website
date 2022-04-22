@@ -72,10 +72,35 @@ export default function Navbar() {
 
           <Box onClick={() => setIsOpen(!isOpen)} sx={{
             display: "none", '@media (max-width:768px)': {
-              display: 'block',
-              marginRight: "15%",
+              display: "block",
+              width: "40px",
+              minHeight: "40px",
+              ml: 6,
+              // border: "1px solid red"
             },
-          }}>Menu </Box>
+          }}>
+            <Box sx={{
+              position: "relative",
+              width: (isOpen ? "20px" : "40px"),
+              minHeight: "4px",
+              background: "White",
+              mt: "10px",
+              transformOrigin: "left",
+              transform: (isOpen ? "rotate(45deg)" : "rotate(0deg)"),
+              transition: "all 0.2s ease"
+            }}></Box>
+            <Box sx={{
+              position: "relative",
+              width: (isOpen ? "20px" : "20px"),
+              minHeight: "4px",
+              background: "White",
+              mt: "10px",
+              transformOrigin: "left",
+              transform: (isOpen ? "rotate(-45deg)" : "rotate(0deg)"),
+              transition: "all 0.2s ease"
+
+            }}></Box>
+          </Box>
         </Box>
         <Box sx={{
           display: "block",
