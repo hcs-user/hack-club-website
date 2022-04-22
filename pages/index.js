@@ -11,7 +11,6 @@ import {
   Heading,
   Input,
   Label,
-  Link,
   NavLink,
   Radio,
   Select,
@@ -19,6 +18,7 @@ import {
   Text,
   Textarea
 } from 'theme-ui'
+import Link from 'next/link'
 import Head from 'next/head'
 import Meta from '@hackclub/meta'
 import theme from '@hackclub/theme'
@@ -28,6 +28,9 @@ import Gallery from '../components/Gallery'
 import Events from '../components/Events'
 import About from '../components/About'
 import Hero from '../components/hero'
+import Main from './Main'
+import Team from './team'
+import { Router } from 'next/router'
 const DocsPage = () => (
   <>
     <Head>
@@ -49,11 +52,13 @@ const DocsPage = () => (
      
       </Container>
     </Box> */}
-    <Navbar />
-    <Hero />
-    <About />
-    <Events />
-    <Gallery />
+      <Link href='/'>
+        <Main />
+      </Link>
+    {/* 
+    <Link href='team'>
+      <Team />
+    </Link> */}
   </>
 )
 

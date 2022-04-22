@@ -33,7 +33,13 @@ function Hero() {
                     }}>
                         Welcome To <br />
                         <Text
-                            sx={{ fontSize: [5, 7], color: 'white', "-webkit-text-fill-color": "transparent", "-webkit-text-stroke-width": "3px" }}>
+                            sx={{
+                                fontSize: [5, 7],
+                                color: 'white',
+                                background: "linear-gradient(to right, #fc5c7d, #6a82fb)",
+                                WebkitBackgroundClip: 'text',
+                                WebkitTextFillColor: 'transparent',
+                            }}>
                             Hack Club SVIT</Text></Heading>
                     <Text color={'primary'} sx={{ fontSize: '2rem', fontWeight: '500', mt: "4" }}></Text>
                     <Button sx={{ position: "absolute", variant: "buttons.ctaLg", padding: "4", bottom: '5' }}>Join Our Community</Button>

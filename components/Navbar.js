@@ -2,7 +2,7 @@ import { NavLink, Flex, Text, Box, Card } from 'theme-ui';
 import Image from 'next/image';
 import { useState } from 'react';
 import ColorSwitcher from './color-switcher';
-import { useRouter } from "next/router";
+import router, { useRouter } from "next/router";
 
 const Navitem = ({ Link, href }) => {
   const router = useRouter()
@@ -17,19 +17,6 @@ const Navitem = ({ Link, href }) => {
 }
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  let COUNTER = 0;
-  // const showNav = () => {
-  //   // // COUNTER++;
-  //   // const nav = document.getElementById('nav-bar');
-  //   // if (COUNTER === 0) {
-  //   //   nav.style.display = "block";
-  //   //   COUNTER++;
-  //   // }
-  //   // else {
-  //   //   nav.style.display = "none";
-  //   //   COUNTER--;
-  //   // }
-  // }
   const Links = ['Home', 'About', 'Events', 'Gallery', 'Team'];
   const LinkItems = [
     { name: "Home", href: "/" },
@@ -38,7 +25,6 @@ export default function Navbar() {
     { name: "Gallery", href: "/#gallery" },
     { name: "Team", href: "/#contact" },
   ];
-  // const Href = ['#Home', '#About', '#Events', '#Gallery', '#Team'];
 
   return (
     <div>
@@ -47,6 +33,7 @@ export default function Navbar() {
           position: 'fixed',
           width: '100%',
           zIndex: 5,
+          top: 0,
           display: 'flex',
           justifyContent: 'flex-start',
           borderBottom: '1px solid',
@@ -64,11 +51,10 @@ export default function Navbar() {
             fontSize: '28px',
             justifyContent: 'space-between',
             alignItems: 'center',
-            color: "theme.util.gxText('sheet', 'primary')",
             '@media (max-width:768px)': {
               ml: 0,
               width: '100%',
-              justifyContent: 'space-between',
+              justifyContent: 'space-around',
               alignContent: 'center',
             },
           }}
@@ -84,22 +70,23 @@ export default function Navbar() {
           <Box onClick={() => setIsOpen(!isOpen)} sx={{
             display: "none", '@media (max-width:768px)': {
               display: 'block',
-              marginRight: "15%"
+              marginRight: "15%",
             },
           }}>Menu </Box>
         </Box>
         <Box sx={{
-          display: (isOpen ? "block" : "none"),
+          display: "block",
           width: '100%',
           height: '100vh',
           position: 'absolute',
           top: "100%",
-          left: 0,
+          transition:"all 0.2s ease",
+          left: (isOpen ? 0 : "-100%"),
           backgroundColor: 'sunken',
           textAlign: 'center'
         }}>
 
-          <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-around', height: "100%", }}>
+          <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-evenly', height: "100%", }}>
             {
               LinkItems && LinkItems.map((Link) => {
                 return (
@@ -123,25 +110,18 @@ export default function Navbar() {
             },
           }}
         >
-          {/* {
-            Links && Links.map((Link) => {
-              return (
-                <Navitem Link={Link} />
-              )
-            })
-          } */}
-          <NavLink href="#about">
+          <NavLink href="#about" onClick={() => router.push('/')}>
             About
           </NavLink>
-          <NavLink href="#event">
+          <NavLink href="#event" onClick={() => router.push('/')}>
             Events
           </NavLink>
-          <NavLink href="#gallery">
+          <NavLink href="#gallery" onClick={() => router.push('/')}>
             Gallery
           </NavLink>
-          {/* <NavLink href="#team">
+          <NavLink onClick={() => router.push('/team')}>
             Team
-          </NavLink> */}
+          </NavLink>
         </Box>
       </Box>
       <div >

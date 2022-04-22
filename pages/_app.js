@@ -18,9 +18,8 @@ export default class App extends NextApp {
     return (
 
       <ThemeProvider theme={theme}>
-        
+        <Navbar />
         <Component {...pageProps} />
-        
       </ThemeProvider>
     )
   }
