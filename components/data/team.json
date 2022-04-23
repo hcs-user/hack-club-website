@@ -18,7 +18,7 @@
       {
         "id": 2,
         "name": "Ayan Retiwala",
-        "img": "/team/vraj.webp",
+        "img": "/team/ayaan.webp",
         "position": "Mentor"
       }
     ]
@@ -42,7 +42,7 @@
       {
         "id": 2,
         "name": "Khushi Patel",
-        "img": "/team/vraj.webp",
+        "img": "/team/khushi.webp",
         "position": "Member"
       }
     ]
@@ -60,13 +60,13 @@
       {
         "id": 1,
         "name": "Vivek Suthar",
-        "img": "/team/jay.webp",
+        "img": "/team/vivek.webp",
         "position": "Co-head"
       },
       {
         "id": 2,
         "name": "Sahil Kakwani",
-        "img": "/team/vraj.webp",
+        "img": "/team/sahil.webp",
         "position": "Member"
       },
       {
@@ -84,25 +84,25 @@
       {
         "id": 0,
         "name": "Dwija Patel",
-        "img": "/team/darshil.webp",
+        "img": "/team/dvija.webp",
         "position": "Head"
       },
       {
         "id": 1,
         "name": "Rythmn Magnani",
-        "img": "/team/jay.webp",
+        "img": "/team/rythem.webp",
         "position": "Co-head"
       },
       {
         "id": 2,
         "name": "Axit Padaliya",
-        "img": "/team/vraj.webp",
+        "img": "/team/axit.webp",
         "position": "Member"
       },
       {
         "id": 3,
         "name": "Afeefa Ahmed",
-        "img": "/team/vraj.webp",
+        "img": "/team/afeefa.webp",
         "position": "Member"
       }
     ]
@@ -114,25 +114,25 @@
       {
         "id": 0,
         "name": "Heta Chokshi",
-        "img": "/team/darshil.webp",
+        "img": "/team/heta.webp",
         "position": "Head"
       },
       {
         "id": 1,
         "name": "Arya Pradeep",
-        "img": "/team/jay.webp",
-        "position": "Co-head"
+        "img": "/team/arya.webp",
+        "position": "Head"
       },
       {
         "id": 2,
         "name": "Jay Gadhavi",
-        "img": "/team/vraj.webp",
-        "position": "Member"
+        "img": "/team/jaygadhavi.webp",
+        "position": "Co-Head"
       },
       {
         "id": 3,
         "name": "Devanshi Patel",
-        "img": "/team/vraj.webp",
+        "img": "/team/devanshi.webp",
         "position": "Member"
       }
     ]
@@ -144,13 +144,13 @@
       {
         "id": 0,
         "name": "Krima Patel",
-        "img": "/team/darshil.webp",
+        "img": "/team/krima.webp",
         "position": "Head"
       },
       {
         "id": 1,
         "name": "Karvy Lalchandani",
-        "img": "/team/jay.webp",
+        "img": "/team/krima.webp",
         "position": "Co-head"
       }
     ]
@@ -162,13 +162,13 @@
       {
         "id": 0,
         "name": "Gautami Parikh",
-        "img": "/team/darshil.webp",
+        "img": "/team/gautami.webp",
         "position": "Head"
       },
       {
         "id": 1,
         "name": "Hari Patel",
-        "img": "/team/jay.webp",
+        "img": "/team/hari.webp",
         "position": "Co-head"
       }
     ]
@@ -180,25 +180,25 @@
       {
         "id": 0,
         "name": "Akshar Vandara",
-        "img": "/team/darshil.webp",
+        "img": "/team/akshar.webp",
         "position": "Head"
       },
       {
         "id": 1,
         "name": "Harsh Upadhyay",
-        "img": "/team/jay.webp",
-        "position": "Co-head"
+        "img": "/team/haru.webp",
+        "position": "Head"
       },
       {
         "id": 2,
         "name": "Rushi Shah",
-        "img": "/team/vraj.webp",
-        "position": "Member"
+        "img": "/team/rushi.webp",
+        "position": "Co-Head"
       },
       {
         "id": 3,
         "name": "Mann Padya",
-        "img": "/team/vraj.webp",
+        "img": "/team/mann.webp",
         "position": "Member"
       }
     ]
@@ -210,25 +210,25 @@
       {
         "id": 0,
         "name": "Smit Patel",
-        "img": "/team/darshil.webp",
+        "img": "/team/smit.webp",
         "position": "Head"
       },
       {
         "id": 1,
         "name": "Harsh Sachaniya",
-        "img": "/team/jay.webp",
-        "position": "Co-head"
+        "img": "/team/Harsh.webp",
+        "position": "Head"
       },
       {
         "id": 2,
         "name": "Mitesh Agrawal",
-        "img": "/team/vraj.webp",
+        "img": "/team/mitesh.webp",
         "position": "Member"
       },
       {
         "id": 3,
         "name": "Dhruv Mistry",
-        "img": "/team/vraj.webp",
+        "img": "/team/dhruv.webp",
         "position": "Member"
       }
     ]
