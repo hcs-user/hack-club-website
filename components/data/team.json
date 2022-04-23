@@ -7,19 +7,25 @@
         "id": 0,
         "name": "Jay Patel",
         "img": "/team/jay.webp",
-        "position": "Lead"
+        "position": "Lead",
+        "github": "https://github.com/imjp19",
+        "linkedin": "https://www.linkedin.com/in/imjp19"
       },
       {
         "id": 1,
         "name": "Vraj Shah",
         "img": "/team/vraj.webp",
-        "position": "Co Lead"
+        "position": "Co Lead",
+        "github": "https://github.com/thevrajshah",
+        "linkedin": "https://www.linkedin.com/in/thevrajshah"
       },
       {
         "id": 2,
         "name": "Ayan Retiwala",
         "img": "/team/ayaan.webp",
-        "position": "Mentor"
+        "position": "Mentor",
+        "github": "https://github.com/LOLwierd",
+        "linkedin": "https://www.linkedin.com/in/ayaan-retiwala-5400bb165"
       }
     ]
   },
@@ -31,19 +37,25 @@
         "id": 0,
         "name": "Aum Sathwara",
         "img": "/team/aum.webp",
-        "position": "Head"
+        "position": "Head",
+        "github": "https://github.com/aumsathwara",
+        "linkedin": "https://www.linkedin.com/in/aum-sathwara-3433b21a3"
       },
       {
         "id": 1,
         "name": "Sarthak Bhave",
         "img": "/team/sarthak.webp",
-        "position": "Co Head"
+        "position": "Co Head",
+        "github": "https://github.com/imjp19",
+        "linkedin": "https://www.linkedin.com/in/imjp19"
       },
       {
         "id": 2,
         "name": "Khushi Patel",
         "img": "/team/khushi.webp",
-        "position": "Member"
+        "position": "Member",
+        "github":"https://github.com/imjp19",
+        "linkedin": "https://www.linkedin.com/in/imjp19"
       }
     ]
   },
@@ -55,25 +67,33 @@
         "id": 0,
         "name": "Darshil Rathod",
         "img": "/team/darshil.webp",
-        "position": "Head"
+        "position": "Head",
+        "github": "https://github.com/RathodDarshil",
+        "linkedin": "https://www.linkedin.com/in/darshil-rathod-783679128"
       },
       {
         "id": 1,
         "name": "Vivek Suthar",
         "img": "/team/vivek.webp",
-        "position": "Co Head"
+        "position": "Co Head",
+        "github": "https://github.com/VIVEK-SUTHAR",
+        "linkedin": "https://www.linkedin.com/in/vivek-suthar-160152202"
       },
       {
         "id": 2,
         "name": "Sahil Kakwani",
         "img": "/team/sahil.webp",
-        "position": "Member"
+        "position": "Member",
+        "github": "https://github.com/sahilkakwani9",
+        "linkedin": "https://www.linkedin.com/in/sahil-kakwani/"
       },
       {
         "id": 3,
         "name": "Vedant Patel",
         "img": "/team/vedant.webp",
-        "position": "Member"
+        "position": "Member",
+        "github": "https://github.com/imjp19",
+        "linkedin": "https://www.linkedin.com/in/imjp19"
       }
     ]
   },
@@ -85,25 +105,33 @@
         "id": 0,
         "name": "Dwija Patel",
         "img": "/team/dvija.webp",
-        "position": "Head"
+        "position": "Head",
+        "github": "https://github.com/imjp19",
+        "linkedin": "https://www.linkedin.com/in/imjp19"
       },
       {
         "id": 1,
         "name": "Rythmn Magnani",
         "img": "/team/rythem.webp",
-        "position": "Co Head"
+        "position": "Co Head",
+        "github":"https://github.com/imjp19",
+        "linkedin":"https://www.linkedin.com/in/imjp19"
       },
       {
         "id": 2,
         "name": "Axit Padaliya",
         "img": "/team/axit.webp",
-        "position": "Member"
+        "position": "Member",
+        "github":"https://github.com/imjp19",
+        "linkedin":"https://www.linkedin.com/in/imjp19"
       },
       {
         "id": 3,
         "name": "Afeefa Ahmed",
         "img": "/team/afeefa.webp",
-        "position": "Member"
+        "position": "Member",
+        "github": "https://github.com/imjp19",
+        "linkedin":"https://www.linkedin.com/in/imjp19"
       }
     ]
   },
@@ -115,25 +143,33 @@
         "id": 0,
         "name": "Heta Chokshi",
         "img": "/team/Heta.webp",
-        "position": "Head"
+        "position": "Head",
+        "github": "https://github.com/imjp19",
+        "linkedin": "https://www.linkedin.com/in/imjp19"
       },
       {
         "id": 1,
         "name": "Arya Pradeep",
         "img": "/team/arya.webp",
-        "position": "Head"
+        "position": "Head",
+        "github": "https://github.com/imjp19",
+        "linkedin": "https://www.linkedin.com/in/imjp19"
       },
       {
         "id": 2,
         "name": "Jay Gadhavi",
         "img": "/team/jaygadhavi.webp",
-        "position": "Co Head"
+        "position": "Co Head",
+        "github":"https://github.com/imjp19",
+        "linkedin":"https://www.linkedin.com/in/imjp19"
       },
       {
         "id": 3,
         "name": "Devanshi Patel",
         "img": "/team/devanshi.webp",
-        "position": "Member"
+        "position": "Member",
+        "github":"https://github.com/imjp19",
+        "linkedin":"https://www.linkedin.com/in/imjp19"
       }
     ]
   },
@@ -145,13 +181,17 @@
         "id": 0,
         "name": "Krima Patel",
         "img": "/team/krima.webp",
-        "position": "Head"
+        "position": "Head",
+        "github":"https://github.com/imjp19",
+        "linkedin":"https://www.linkedin.com/in/imjp19"
       },
       {
         "id": 1,
         "name": "Karvy Lalchandani",
         "img": "/team/krima.webp",
-        "position": "Co Head"
+        "position": "Co Head",
+        "github":"https://github.com/imjp19",
+        "linkedin":"https://www.linkedin.com/in/imjp19"
       }
     ]
   },
@@ -163,13 +203,17 @@
         "id": 0,
         "name": "Gautami Parikh",
         "img": "/team/gautami.webp",
-        "position": "Head"
+        "position": "Head",
+        "github": "https://github.com/imjp19",
+        "linkedin": "https://www.linkedin.com/in/imjp19"
       },
       {
         "id": 1,
         "name": "Hari Patel",
         "img": "/team/hari.webp",
-        "position": "Co Head"
+        "position": "Co Head",
+        "github": "https://github.com/imjp19",
+        "linkedin":"https://www.linkedin.com/in/imjp19"
       }
     ]
   },
@@ -181,25 +225,33 @@
         "id": 0,
         "name": "Akshar Vandara",
         "img": "/team/akshar.webp",
-        "position": "Head"
+        "position": "Head",
+        "github": "https://github.com/imjp19",
+        "linkedin": "https://www.linkedin.com/in/imjp19"
       },
       {
         "id": 1,
         "name": "Harsh Upadhyay",
         "img": "/team/haru.webp",
-        "position": "Head"
+        "position": "Head",
+        "github":"https://github.com/imjp19",
+        "linkedin":"https://www.linkedin.com/in/imjp19"
       },
       {
         "id": 2,
         "name": "Rushi Shah",
         "img": "/team/rushi.webp",
-        "position": "Co Head"
+        "position": "Co Head",
+        "github":"https://github.com/imjp19",
+        "linkedin":"https://www.linkedin.com/in/imjp19"
       },
       {
         "id": 3,
         "name": "Mann Padya",
         "img": "/team/mann.webp",
-        "position": "Member"
+        "position": "Member",
+        "github": "https://github.com/imjp19",
+        "linkedin": "https://www.linkedin.com/in/imjp19"
       }
     ]
   },
@@ -211,25 +263,33 @@
         "id": 0,
         "name": "Smit Patel",
         "img": "/team/smit.webp",
-        "position": "Head"
+        "position": "Head",
+        "github":"https://github.com/imjp19",
+        "linkedin":"https://www.linkedin.com/in/imjp19"
       },
       {
         "id": 1,
         "name": "Harsh Sachaniya",
         "img": "/team/Harsh.webp",
-        "position": "Head"
+        "position": "Head",
+        "github":"https://github.com/imjp19",
+        "linkedin": "https://www.linkedin.com/in/imjp19"
       },
       {
         "id": 2,
         "name": "Mitesh Agrawal",
         "img": "/team/mitesh.webp",
-        "position": "Co Head"
+        "position": "Co Head",
+        "github":"https://github.com/imjp19",
+        "linkedin":"https://www.linkedin.com/in/imjp19"
       },
       {
         "id": 3,
         "name": "Dhruv Mistry",
         "img": "/team/dhruv.webp",
-        "position": "Member"
+        "position": "Member",
+        "github": "https://github.com/imjp19",
+        "linkedin":"https://www.linkedin.com/in/imjp19"
       }
     ]
   }

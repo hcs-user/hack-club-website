@@ -1,7 +1,7 @@
 import Image from "next/image"
 import React from 'react'
 import { BsGithub, BsLinkedin } from 'react-icons/bs'
-import { Box, Container, Flex, Grid, Text } from 'theme-ui'
+import { Box, Container, Flex, Grid, Text, Link } from 'theme-ui'
 import team from "../components/data/team.json"
 function Team() {
     return (
@@ -33,7 +33,7 @@ function Team() {
                             <Grid sx={{
                                 gridTemplateColumns: ["repeat(1,1fr)", "repeat(2,1fr)", "repeat(3,1fr)", "repeat(4,1fr)"],
                                 gridTemplateRows: "repeat(1,1fr)",
-                                gap: 3,
+                                gap: 4,
                                 // border:"1px solid red",
                                 minWidth: ["65%", "80%"],
                                 rowGap: 4,
@@ -70,7 +70,7 @@ function Team() {
                                             <Text sx={{ fontWeight: "600", fontSize: 24 }}>
                                                 {member.name}
                                             </Text>
-                                            <Text sx={{ fontWeight: "500", fontSize: 20 }}>
+                                            <Text m={1} sx={{ fontWeight: "500", fontSize: 20, color: "primary" }}>
                                                 {member.position}
                                             </Text>
                                             <Flex sx={{
@@ -81,8 +81,8 @@ function Team() {
                                                 // border:"1px solid red",
                                                 marginBlock: 2,
                                             }}>
-                                                <BsGithub />
-                                                <BsLinkedin />
+                                                <Link href={member.github}><BsGithub /></Link>
+                                                <Link href={member.linkedin}><BsLinkedin /></Link>
                                             </Flex>
                                         </Flex>
                                     </Box>
