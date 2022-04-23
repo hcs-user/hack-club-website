@@ -36,7 +36,8 @@ function Team() {
                             {el.members.map((member) => (
                                 <Box margin={4} sx={{
                                     width: 'max-content',
-                                    minWidth: ["100%", "45%", "18%"],
+                                    minWidth: ["100%", "90%", "40%", "18%"],
+                                    maxWidth: ['100%'],
                                     border: '2px solid #fc5c7d',
                                     borderRadius: 12,
                                     padding: 3,
@@ -44,11 +45,18 @@ function Team() {
                                 }}>
                                     <Flex sx={{
                                         flexDirection: ['row', 'column'],
-                                        justifyContent: ['space-around'],
+                                        justifyContent: ['space-evenly'],
                                         alignItems: ['center', null]
                                     }}>
 
-                                        <Image src={member.img} width={'100%'} height={'100%'} objectFit={'contain'} borderRadius="5" />
+                                        <Image src={member.img}
+                                            width={'100%'}
+                                            height={'100%'}
+                                            objectFit={'contain'}
+                                            sx={{
+                                                minWidth: "100%",
+                                            }}
+                                        />
                                         <Text
                                             sx={{
                                                 fontSize: [28, 24],
