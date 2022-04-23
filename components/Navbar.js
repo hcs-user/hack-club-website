@@ -1,8 +1,8 @@
-import { NavLink, Flex, Text, Box, Card } from 'theme-ui';
 import Image from 'next/image';
-import { useState } from 'react';
-import ColorSwitcher from './color-switcher';
 import router, { useRouter } from "next/router";
+import { useState } from 'react';
+import { Box, NavLink, Text } from 'theme-ui';
+import ColorSwitcher from './color-switcher';
 
 const Navitem = ({ Link, href }) => {
   const router = useRouter()
@@ -83,7 +83,7 @@ export default function Navbar() {
               position: "relative",
               width: (isOpen ? "20px" : "40px"),
               minHeight: "4px",
-              background: "White",
+              backgroundColor: "primary",
               mt: "10px",
               transformOrigin: "left",
               transform: (isOpen ? "rotate(45deg)" : "rotate(0deg)"),
@@ -93,7 +93,7 @@ export default function Navbar() {
               position: "relative",
               width: (isOpen ? "20px" : "20px"),
               minHeight: "4px",
-              background: "White",
+              backgroundColor: "primary",
               mt: "10px",
               transformOrigin: "left",
               transform: (isOpen ? "rotate(-45deg)" : "rotate(0deg)"),
@@ -114,7 +114,10 @@ export default function Navbar() {
           textAlign: 'center'
         }}>
 
-          <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-evenly', height: "100%", }}>
+          <Box sx={{
+            display: 'flex', flexDirection: 'column', justifyContent: 'space-evenly', height: "90%",
+            // border: "1px solid red"
+          }}>
 
             <NavLink href='#about' onClick={Navigate}>
               About
@@ -141,7 +144,9 @@ export default function Navbar() {
             justifyContent: 'space-evenly',
             transition: 'all 0.2s ease-in-out',
             '@media (max-width:768px)': {
-              display: "none"
+              display: "none",
+              // border: "1px solid red"
+
             },
           }}
         >

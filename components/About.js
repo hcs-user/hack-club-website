@@ -1,12 +1,12 @@
 import React from 'react'
-import { Card, Container, Flex, Text, Box } from 'theme-ui'
+import { Box, Card, Container, Flex, Text } from 'theme-ui'
 function About() {
   return (
     <Container
       id="about"
       p={2}
       mb={4}
-      mt={[6,4]}
+      mt={[6, 4]}
       bg={'sheet'}
       sx={{
         borderRadius: "8px",
@@ -29,7 +29,7 @@ function About() {
         <Flex
           sx={{
             mt: '2',
-            flexDirection: ['column', 'row'],
+            flexDirection: ['column', 'column', 'column', 'row'],
             alignItems: "center",
             justifyContent: 'space-evenly',
             fontSize: '1.5rem',
@@ -40,7 +40,7 @@ function About() {
             background: "-webkit-linear-gradient(to left, #1cd8d2, #93edc7)",
             background: "linear-gradient(to left, #1cd8d2, #93edc7)",
             color: "black",
-            textAlign: 'justify'
+            textAlign: 'justify',
           }} >
             <h3>Coding Environment</h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum optio explicabo voluptatibus quae consequatur enim, dolore officiis nulla distinctio adipisci, cumque rerum odit dignissimos odio a, corporis obcaecati facere i</Card>
           <Card
@@ -49,7 +49,7 @@ function About() {
               backgroundImage: "linear-gradient(315deg, #f9ea8f 0%, #aff1da 74%)",
               backgroundColor: "#f9ea8f",
               color: "black",
-              textAlign: 'justify'
+              textAlign: 'justify',
             }}
           >
             <h3>Coding Environment</h3>
@@ -60,7 +60,7 @@ function About() {
               background: "linear-gradient(to right, #ff6e7f, #bfe9ff)",
               backgroundColor: "#f9ea8f",
               color: "black",
-              textAlign: 'justify'
+              textAlign: 'justify',
             }}
           >
             <h3>Coding Environment</h3>

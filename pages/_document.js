@@ -1,4 +1,4 @@
-import Document, { Html, Head, Main, NextScript } from 'next/document'
+import Document, { Head, Html, Main, NextScript } from 'next/document'
 import { InitializeColorMode } from 'theme-ui'
 
 export default class extends Document {
@@ -31,7 +31,6 @@ export default class extends Document {
             content='hackclubsvit.co'
             key='ogsitename'
           />
-          <meta name='viewport' content='initial-scale=1.0, width=device-width' />
           <link rel='shortcut icon' href='/logo.png' type='image/x-icon' />
         </Head>
         <body>
