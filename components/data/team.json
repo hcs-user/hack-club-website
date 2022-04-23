@@ -37,7 +37,7 @@
         "id": 1,
         "name": "Sarthak Bhave",
         "img": "/team/sarthak.webp",
-        "position": "Co-head"
+        "position": "Co Head"
       },
       {
         "id": 2,
@@ -61,7 +61,7 @@
         "id": 1,
         "name": "Vivek Suthar",
         "img": "/team/vivek.webp",
-        "position": "Co-head"
+        "position": "Co Head"
       },
       {
         "id": 2,
@@ -91,7 +91,7 @@
         "id": 1,
         "name": "Rythmn Magnani",
         "img": "/team/rythem.webp",
-        "position": "Co-head"
+        "position": "Co Head"
       },
       {
         "id": 2,
@@ -114,7 +114,7 @@
       {
         "id": 0,
         "name": "Heta Chokshi",
-        "img": "/team/heta.webp",
+        "img": "/team/Heta.webp",
         "position": "Head"
       },
       {
@@ -127,7 +127,7 @@
         "id": 2,
         "name": "Jay Gadhavi",
         "img": "/team/jaygadhavi.webp",
-        "position": "Co-Head"
+        "position": "Co Head"
       },
       {
         "id": 3,
@@ -151,7 +151,7 @@
         "id": 1,
         "name": "Karvy Lalchandani",
         "img": "/team/krima.webp",
-        "position": "Co-head"
+        "position": "Co Head"
       }
     ]
   },
@@ -169,7 +169,7 @@
         "id": 1,
         "name": "Hari Patel",
         "img": "/team/hari.webp",
-        "position": "Co-head"
+        "position": "Co Head"
       }
     ]
   },
@@ -193,7 +193,7 @@
         "id": 2,
         "name": "Rushi Shah",
         "img": "/team/rushi.webp",
-        "position": "Co-Head"
+        "position": "Co Head"
       },
       {
         "id": 3,
@@ -223,7 +223,7 @@
         "id": 2,
         "name": "Mitesh Agrawal",
         "img": "/team/mitesh.webp",
-        "position": "Member"
+        "position": "Co Head"
       },
       {
         "id": 3,
