@@ -1,6 +1,6 @@
 import React from 'react'
-import { useEffect } from 'react'
-import { Box, Flex, Container, Button, Text, Heading, Card } from "theme-ui"
+import { FaDiscord } from "react-icons/fa"
+import { Button, Container, Flex, Heading, Link, Text } from "theme-ui"
 const Popup = () => {
     return (
         <Container sx={{ height: '50vh' }}>
@@ -41,8 +41,20 @@ function Hero() {
                                 WebkitTextFillColor: 'transparent',
                             }}>
                             Hack Club SVIT</Text></Heading>
-                    <Text color={'primary'} sx={{ fontSize: '2rem', fontWeight: '500', mt: "4" }}></Text>
-                    <Button sx={{ position: "absolute", variant: "buttons.ctaLg", padding: "4", bottom: '5' }}>Join Our Community</Button>
+                    {/* <Text color={'primary'} sx={{ fontSize: '2rem', fontWeight: '500', mt: "4" }}></Text> */}
+                    <Button sx={{
+                        position: "absolute", variant: "buttons.ctaLg", padding: "4", bottom: '5',
+                        color: 'white',
+                    }}>
+                        <Link
+                            href='https://discord.gg/KZZzD8a7PY'
+                            target='_blank'
+                            color='white'
+                        >
+                            <FaDiscord fontSize='20' color='white' />
+                            Join Discord
+                        </Link>
+                    </Button>
                 </Flex>
             </Container>
 

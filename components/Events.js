@@ -42,20 +42,20 @@ export default function Events() {
                     </h4>
                 </Box>
             </Container>
-            <Container id="event" p={2} mb={6} sx={{
+            <Container id="event" mb={6} sx={{
                 textAlign: 'center',
                 display: 'flex',
                 justifyContent: 'center',
             }}>
-                <Box >
-                    <Text sx={{ fontSize: "4rem", color: 'primary', fontWeight: 500 }}>
+                <Box>
+                    <Text variant='title' sx={{ color: 'primary' }}>
                         Events
                     </Text>
-                    <Grid gap={4} columns={[1, 2, 3, 4]}>
+                    <Grid gap={[1, 1, 4, 4]} columns={[1, 2, 2, 3, 4]}>
                         {
                             events && events.map(el => {
                                 return <Card
-                                    key={el.id} m={2} sx={{ height: "auto", minWidth: "240px" }} onClick={() => { setIsModalOpen(true); setId(el.id) }} >
+                                    key={el.id} m={1} sx={{ height: "auto", minWidth: "240px" }} onClick={() => { setIsModalOpen(true); setId(el.id) }} >
                                     <Image src={el.event_logo}
                                         width={'100%'}
                                         height={'100%'}

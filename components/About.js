@@ -12,7 +12,7 @@ function About() {
         borderRadius: "8px",
         textAlign: 'center'
       }}>
-      <Text p={4} sx={{ fontSize: "4rem", color: "primary" }}>About</Text>
+      <Text variant='title' p={4} sx={{ fontSize: "4rem", color: "primary" }}>About</Text>
       <Box p={4} sx={{ textAlign: 'justify' }}>
         <Text sx={{ fontSize: ["1.2rem", "1.8rem"], lineHeight: "2" }}>Hack Club is an initiative for students by students. Hack Club is a place that lets you tinker, break, and rebuild. After all, you can't make an omelet without breaking a few eggs 🍳</Text>
       </Box>
@@ -30,7 +30,7 @@ function About() {
           sx={{
             mt: '2',
             flexDirection: ['column', 'column', 'column', 'row'],
-            alignItems: "center",
+            alignItems: 'stretch',
             justifyContent: 'space-evenly',
             fontSize: '1.5rem',
             textAlign: 'left',

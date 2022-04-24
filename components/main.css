@@ -17,3 +17,10 @@
 .image {
     border-radius: 50%;
 }
+a{
+    text-decoration: none !important;
+}
+a:hover{
+    cursor: pointer;
+    text-decoration: none;
+}
