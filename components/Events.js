@@ -55,10 +55,13 @@ export default function Events() {
                         {
                             events && events.map(el => {
                                 return <Card
-                                    key={el.id} m={1} sx={{ height: "auto", minWidth: "240px" }} onClick={() => { setIsModalOpen(true); setId(el.id) }} >
+                                    key={el.id} m={2} sx={{ height: "auto", minWidth: "240px" }} onClick={() => { setIsModalOpen(true); setId(el.id) }} >
                                     <Image src={el.event_logo}
                                         width={'100%'}
                                         height={'100%'}
+                                        sx={{
+                                            margin: 2,
+                                        }}
                                     />
                                     <Box marginLeft={["-50", null, "-15px"]} sx={{ textAlign: "left", width: "max-content" }}>
                                         <Text

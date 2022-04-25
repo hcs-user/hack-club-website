@@ -2,7 +2,6 @@ import Image from 'next/image';
 import router, { useRouter } from "next/router";
 import { useState } from 'react';
 import { Box, NavLink, Text } from 'theme-ui';
-import ColorSwitcher from './color-switcher';
 
 const Navitem = ({ Link, href }) => {
   const router = useRouter()
@@ -57,8 +56,11 @@ export default function Navbar() {
             '@media (max-width:768px)': {
               ml: 0,
               width: '100%',
-              justifyContent: 'space-around',
+              justifyContent: 'space-between',
               alignContent: 'center',
+              // border:"1px solid red"
+              paddingBlock: 1,
+              paddingInline: 2,
             },
           }}
         >
@@ -68,8 +70,6 @@ export default function Navbar() {
             width={50}
             height={50}
           />
-          <ColorSwitcher />
-
           <Box onClick={() => setIsOpen(!isOpen)} sx={{
             display: "none", '@media (max-width:768px)': {
               display: "block",
@@ -98,7 +98,6 @@ export default function Navbar() {
               transformOrigin: "left",
               transform: (isOpen ? "rotate(-45deg)" : "rotate(0deg)"),
               transition: "all 0.2s ease"
-
             }}></Box>
           </Box>
         </Box>
@@ -116,7 +115,8 @@ export default function Navbar() {
 
           <Box sx={{
             display: 'flex', flexDirection: 'column', justifyContent: 'space-evenly', height: "90%",
-            // border: "1px solid red"
+            // border: "1px solid red",
+            fontSize: 28,
           }}>
 
             <NavLink href='#about' onClick={Navigate}>
@@ -131,7 +131,6 @@ export default function Navbar() {
             <NavLink onClick={() => { router.push('/team'); setIsOpen(false) }}>
               Team
             </NavLink>
-
           </Box>
         </Box>
         <Box

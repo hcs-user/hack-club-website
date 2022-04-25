@@ -1,7 +1,8 @@
 import Image from "next/image"
+import Link from 'next/link'
 import React from 'react'
-import { BsGithub, BsLinkedin } from 'react-icons/bs'
-import { Box, Container, Flex, Grid, Text, Link } from 'theme-ui'
+import { BsGithub, BsLinkedin } from "react-icons/bs"
+import { Box, Container, Flex, Grid, Text } from 'theme-ui'
 import team from "../components/data/team.json"
 function Team() {
     return (
@@ -9,91 +10,70 @@ function Team() {
             sx={{
                 // border: "1px solid red",
                 marginTop: 6,
-                height: "max=content",
+                height: "max-content",
             }}
         >
-            {
-                team && team.map((el) =>
-                (
-                    <>
-                        <Box sx={{
-                            marginBlock: 4,
-                        }}>
-                            <Flex
+            <Grid
+                sx={{
+                    gridTemplateColumns: ["repeat(1,1fr)", "repeat(2,1fr)", "repeat(3,1fr)", "repeat(4,1fr)"],
+                    gap: 4,
+                    padding: 4,
+                    placeContent: "center",
+                    placeItems: "center"
+                }}
+            >
+                {
+                    team && team.map((el) => {
+                        {
+                            return <Box
                                 sx={{
-                                    fontSize: 40,
-                                    color: 'blue',
-                                    fontWeight: "650",
-                                    justifyContent: ["center", "left"],
-                                    width: "100%",
-                                    textAlign: ["center", "center", "left"],
-                                }}
-                            >{el.team_name}
-                            </Flex>
-                            <Grid sx={{
-                                gridTemplateColumns: ["repeat(1,1fr)", "repeat(2,1fr)", "repeat(3,1fr)", "repeat(4,1fr)"],
-                                gridTemplateRows: "repeat(1,1fr)",
-                                gap: 4,
-                                // border:"1px solid red",
-                                minWidth: ["65%", "80%"],
-                                rowGap: 4,
-                                paddingBlock: 4,
-                                placeItems: "center",
-                            }}>
-                                {el.members.map((member) => (
-                                    <Box
-                                        sx={{
-                                            minWidth: ["80%", "100%"],
-                                            minHeight: "100%",
-                                            // border: "2px solid #b74a62",
-                                            borderRadius: 10,
-                                            padding: 3,
-                                            backgroundColor: "sheet",
-                                            // background:"linear-gradient(60deg, #59c173, #a17fe0, #5d26c1)",
-                                            textAlign: "center",
-                                            // mt: -12,
-                                        }}>
-                                        <Image src={member.img}
-                                            height={"110%"}
-                                            width={"110%"}
-                                            objectFit={'cover'}
-                                            className="image"
-                                        />
-                                        <Flex sx={{
-                                            flexDirection: "column",
-                                            // color: "white",
-                                            // border:"1px solid red",
-                                            alignItems: "center",
-                                            minWidth: "100%",
-                                            paddingBlockStart: 1,
-                                        }}>
-                                            <Text sx={{ fontWeight: "600", fontSize: 24 }}>
-                                                {member.name}
-                                            </Text>
-                                            <Text m={1} sx={{ fontWeight: "500", fontSize: 20, color: "primary" }}>
-                                                {member.position}
-                                            </Text>
-                                            <Flex sx={{
-                                                width: "30%",
-                                                fontWeight: "500",
-                                                fontSize: 21,
-                                                justifyContent: "space-between",
-                                                // border:"1px solid red",
-                                                marginBlock: 2,
-                                            }}>
-                                                <Link href={member.github}><BsGithub /></Link>
-                                                <Link href={member.linkedin}><BsLinkedin /></Link>
-                                            </Flex>
-                                        </Flex>
-                                    </Box>
-                                ))}
-                            </Grid>
-                        </Box>
-                    </>
-                )
-                )
-            }
-        </Container>
+                                    minWidth: ["90%", "100%"],
+                                    minHeight: "100%",
+                                    // border: "2px solid #b74a62",
+                                    borderRadius: 10,
+                                    padding: 3,
+                                    backgroundColor: "sheet",
+                                    // background:"linear-gradient(60deg, #59c173, #a17fe0, #5d26c1)",
+                                    textAlign: "center",
+                                    // mt: -12,
+                                }}>
+                                <Image src={el.img}
+                                    height={"110%"}
+                                    width={"110%"}
+                                    objectFit={'cover'}
+                                    objectPosition={'top'}
+                                    className="image"
+                                />
+                                <Flex sx={{
+                                    flexDirection: "column",
+                                    // color: "white",
+                                    // border:"1px solid red",
+                                    alignItems: "center",
+                                    minWidth: "100%",
+                                    paddingBlockStart: 1,
+                                }}>
+                                    <Text sx={{ fontWeight: "600", fontSize: 24 }}>
+                                        {el.name}
+                                    </Text>
+                                    <Flex sx={{
+                                        width: ["40%", "30%", "45%"],
+                                        fontWeight: "500",
+                                        fontSize: 21,
+                                        justifyContent: "space-between",
+                                        // border:"1px solid red",
+                                        marginBlock: 2,
+                                        padding: 2,
+                                    }}>
+                                        <Link href={el.github}><BsGithub /></Link>
+                                        <Link href={el.linkedin}><BsLinkedin /></Link>
+                                    </Flex>
+                                </Flex>
+                            </Box>
+                        }
+                    })
+                }
+            </Grid>
+        </Container >
 
     )
 }
