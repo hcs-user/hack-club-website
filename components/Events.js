@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import React, { useState } from 'react';
 import { MdClose, MdOutlineDateRange } from "react-icons/md";
-import { Box, Card, Container, Grid, Heading, Text } from 'theme-ui';
+import { Box, Card, Container, Flex, Grid, Heading, Text } from 'theme-ui';
 import events from "../events.json";
 export default function Events() {
     const [isModalOPen, setIsModalOpen] = useState(false);
@@ -47,11 +47,17 @@ export default function Events() {
                 display: 'flex',
                 justifyContent: 'center',
             }}>
-                <Box>
+
+                <Box >
                     <Text variant='title' sx={{ color: 'primary' }}>
                         Events
                     </Text>
-                    <Grid gap={[1, 1, 4, 4]} columns={[1, 2, 2, 3, 4]}>
+                    <Grid gap={[1, 1, 4, 4]} columns={[1, 2, 2, 3, 4]}
+                        sx={{
+                            //  border:"1px solid red",
+                            mt: 5,
+                        }}
+                    >
                         {
                             events && events.map(el => {
                                 return <Card
@@ -63,16 +69,21 @@ export default function Events() {
                                             margin: 2,
                                         }}
                                     />
-                                    <Box marginLeft={["-50", null, "-15px"]} sx={{ textAlign: "left", width: "max-content" }}>
-                                        <Text
-                                            sx={{
-                                                fontSize: [20,]
-                                            }}
-                                        >
-                                            {el.event_name}
-                                        </Text><br />
-                                        <MdOutlineDateRange /><Text sx={{ fontSize: '14px' }}>{el.event_date}</Text>
-                                    </Box>
+                                    <Flex marginLeft={["-50", null, "-15px"]} sx={{ flexDirection: "column", textAlign: "left", width: "max-content", marginBlockStart: 4, }}>
+                                        <Flex sx={{ flexDirection: "column" }}>
+                                            <Text
+                                                sx={{
+                                                    fontSize: [24]
+                                                }}
+                                            >
+                                                {el.event_name}
+                                            </Text>
+                                            <Flex>
+                                                <MdOutlineDateRange />
+                                                <Text sx={{ fontSize: 14, mx: 1 }}>{el.event_date}</Text>
+                                            </Flex>
+                                        </Flex>
+                                    </Flex>
                                 </Card>
                             })
                         }

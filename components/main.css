@@ -16,11 +16,19 @@
 
 .image {
     border-radius: 50%;
+    border: 2px salmon solid !important;
 }
-a{
+
+a {
     text-decoration: none !important;
 }
-a:hover{
+
+a:hover {
     cursor: pointer;
     text-decoration: none;
+}
+
+#ii {
+    height: max-content;
+    margin-top: -65px;
 }

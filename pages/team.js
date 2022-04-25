@@ -18,6 +18,7 @@ function Team() {
                     gridTemplateColumns: ["repeat(1,1fr)", "repeat(2,1fr)", "repeat(3,1fr)", "repeat(4,1fr)"],
                     gap: 4,
                     padding: 4,
+                    rowGap: 5,
                     placeContent: "center",
                     placeItems: "center"
                 }}
@@ -37,13 +38,16 @@ function Team() {
                                     textAlign: "center",
                                     // mt: -12,
                                 }}>
-                                <Image src={el.img}
-                                    height={"110%"}
-                                    width={"110%"}
-                                    objectFit={'cover'}
-                                    objectPosition={'top'}
-                                    className="image"
-                                />
+                                <div id="ii">
+                                    <Image src={el.img}
+                                        height={"110%"}
+                                        width={"110%"}
+                                        objectFit={'cover'}
+                                        objectPosition={'top'}
+                                        className="image"
+
+                                    />
+                                </div>
                                 <Flex sx={{
                                     flexDirection: "column",
                                     // color: "white",
@@ -52,7 +56,7 @@ function Team() {
                                     minWidth: "100%",
                                     paddingBlockStart: 1,
                                 }}>
-                                    <Text sx={{ fontWeight: "600", fontSize: 24 }}>
+                                    <Text sx={{ fontSize: 24 }}>
                                         {el.name}
                                     </Text>
                                     <Flex sx={{

@@ -8,7 +8,6 @@ const Popup = () => {
         </Container>
     )
 }
-
 function Hero() {
     return (
         <>
@@ -41,20 +40,20 @@ function Hero() {
                                 WebkitTextFillColor: 'transparent',
                             }}>
                             Hack Club SVIT</Text></Heading>
-                    {/* <Text color={'primary'} sx={{ fontSize: '2rem', fontWeight: '500', mt: "4" }}></Text> */}
-                    <Button sx={{
-                        position: "absolute", variant: "buttons.ctaLg", padding: "4", bottom: '5',
-                        color: 'white',
-                    }}>
-                        <Link
-                            href='https://discord.gg/KZZzD8a7PY'
-                            target='_blank'
-                            color='white'
-                        >
-                            <FaDiscord fontSize='20' color='white' />
-                            Join Discord
-                        </Link>
-                    </Button>
+                    <Link
+                        href='https://discord.gg/KZZzD8a7PY'
+                        target='_blank'
+                        color='white'
+                    >
+                        <Flex sx={{
+                            marginBlock: 4,
+                            alignItems: "center", px: "4", borderRadius: "12px", py: "1",
+                            background: "linear-gradient(-55deg, #E21143, #FFB03A)",
+                        }}>
+                            <FaDiscord fontSize='28' color='white' />
+                            <Text sx={{ fontSize: 28, mx: 3 }}>Join Discord</Text>
+                        </Flex>
+                    </Link>
                 </Flex>
             </Container>
 
