@@ -33,13 +33,24 @@ function Hero() {
                         Welcome To <br />
                         <Text
                             sx={{
-                                fontSize: [5, 7],
+                                fontSize: [5,7],
                                 color: 'white',
                                 background: "linear-gradient(to right, #fc5c7d, #6a82fb)",
                                 WebkitBackgroundClip: 'text',
                                 WebkitTextFillColor: 'transparent',
                             }}>
                             Hack Club SVIT</Text></Heading>
+                    <Text sx={{
+                        fontSize: [2,2,3, 4],
+                        // border: "1px solid red",
+                        maxWidth: ["100%", "100%","100%","48%"],
+                        textAlign: ["left","center","justify"],
+                        color: "orange",
+                        my: 3,
+                        padding:3,
+                    }}>
+                        Just another group of people committed to helping people gain a headstart in their hacking journey
+                    </Text>
                     <Link
                         href='https://discord.gg/KZZzD8a7PY'
                         target='_blank'
