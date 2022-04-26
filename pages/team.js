@@ -48,7 +48,8 @@ function Team() {
 
                                     />
                                 </div>
-                                <Flex sx={{
+                                <Flex 
+                                sx={{
                                     flexDirection: "column",
                                     // color: "white",
                                     // border:"1px solid red",
@@ -65,6 +66,7 @@ function Team() {
                                         fontSize: 21,
                                         justifyContent: "space-between",
                                         // border:"1px solid red",
+                                        
                                         marginBlock: 2,
                                         padding: 2,
                                     }}>
