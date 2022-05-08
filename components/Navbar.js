@@ -144,8 +144,7 @@ export default function Navbar() {
             transition: 'all 0.2s ease-in-out',
             '@media (max-width:768px)': {
               display: "none",
-              // border: "1px solid red"
-
+              // border: "1px solid red
             },
           }}
         >

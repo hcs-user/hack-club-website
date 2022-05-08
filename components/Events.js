@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import React, { useState } from 'react';
 import { MdClose, MdOutlineDateRange } from "react-icons/md";
-import { Box, Card, Container, Flex, Grid, Heading, Text } from 'theme-ui';
+import { Box, Button, Card, Container, Flex, Grid, Heading, Text } from 'theme-ui';
 import events from "../events.json";
 export default function Events() {
     const [isModalOPen, setIsModalOpen] = useState(false);
@@ -52,6 +52,14 @@ export default function Events() {
                     <Text variant='title' sx={{ color: 'primary' }}>
                         Events
                     </Text>
+                    {/* <Flex sx={{
+                        // border: "1px solid red",
+                        justifyContent: "center"
+                    }}>
+                        <Button variant='outlineLg' mr={4}>Upcoming</Button>
+                        <Button variant='outlineLg' mr={4}>All</Button>
+                        <Button variant='outlineLg' mr={4}>Past</Button>
+                    </Flex> */}
                     <Grid gap={[1, 1, 4, 4]} columns={[1, 2, 2, 3, 4]}
                         sx={{
                             //  border:"1px solid red",
