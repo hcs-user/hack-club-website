@@ -1,41 +1,13 @@
-import {
-  BaseStyles,
-  Badge,
-  Box,
-  Button,
-  Card,
-  Checkbox,
-  Container,
-  Flex,
-  Grid,
-  Heading,
-  Input,
-  Label,
-  NavLink,
-  Radio,
-  Select,
-  Slider,
-  Text,
-  Textarea
-} from 'theme-ui'
-import Link from 'next/link'
-import Head from 'next/head'
 import Meta from '@hackclub/meta'
-import theme from '@hackclub/theme'
-import ColorSwitcher from '../components/color-switcher'
-import Navbar from '../components/Navbar'
-import Gallery from '../components/Gallery'
-import Events from '../components/Events'
-import About from '../components/About'
-import Hero from '../components/hero'
+import Head from 'next/head'
+import Link from 'next/link'
 import Main from './Main'
-import Team from './team'
-import { Router } from 'next/router'
 const DocsPage = () => (
   <>
     <Head>
       <title>Hack Club SVIT</title>
       <Meta name="Hack Club SVIT" description="HacK Club SVIT Website" />
+      <Meta name="theme-color" content="red"></Meta>
     </Head>
     <style jsx global>{`
       *{
