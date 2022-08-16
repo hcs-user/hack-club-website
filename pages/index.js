@@ -10,10 +10,10 @@ const DocsPage = () => (
       <Meta name="theme-color" content="red"></Meta>
     </Head>
     <style jsx global>{`
-      *{
-        margin:0;
-        padding:0;
-        box-sizing:border-box;
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
         scroll-behavior: smooth;
       }
     `}</style>
@@ -32,9 +32,9 @@ const DocsPage = () => (
      
       </Container>
     </Box> */}
-      <Link href='/'>
-        <Main />
-      </Link>
+    <Link href="/">
+      <Main />
+    </Link>
     {/* 
     <Link href='team'>
       <Team />
