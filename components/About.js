@@ -13,23 +13,27 @@ function About() {
       sx={{
         textAlign: 'center',
         minWidth: '100%',
-        width: '100vh',
+        // width: '100vh',
         minHeight: '80vh',
         paddingTop: '170px'
       }}
     >
+      <Box sx={{ paddingLeft: '25px', borderRadius: '40px', float: 'left' }}>
+        <img src={'./2.jpg'} width={'300px'} height={'300px'} />
+      </Box>
       <Text
         variant="title"
-        paddingLeft={540}
+        // paddingLeft={540}
         sx={{ fontSize: '3 rem', color: 'primary', marginTop: '600px' }}
       >
         Who are we?
       </Text>
-      <Box
+
+      {/* <Box
         p={32}
         sx={{
-          // paddingLeft: '60px',
-
+          paddingLeft: '60px',
+          float: 'right',
           minWidth: '50%',
           width: '52%',
           textAlign: 'center'
@@ -46,7 +50,7 @@ function About() {
           distinctio adipisci, cumque rerum odit dignissimos odio a, corporis
           obcaecati facere i
         </Text>
-      </Box>
+      </Box> */}
     </Container>
   )
 }

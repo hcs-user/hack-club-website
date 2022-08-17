@@ -16,7 +16,7 @@ function Hero() {
           backgroundImage:
             'linear-gradient(0deg, #2F2F2F, rgba(0, 0, 0, 0.8)), url(/new.jpg)',
           backgroundSize: 'cover',
-          minHeight: '100vh',
+          minHeight: '80vh',
           minWidth: '100%',
           opacity: '1'
         }}
