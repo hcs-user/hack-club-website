@@ -1,102 +1,51 @@
 import React from 'react'
+import { FaAlignJustify } from 'react-icons/fa'
 import { Box, Card, Container, Flex, Text } from 'theme-ui'
 function About() {
   return (
     <Container
       id="about"
-      p={16}
-      mb={4}
-      mt={[6, 4]}
-      bg={'sheet'}
+      p={4}
+      mb={7}
+      bg={'#1D1D1D'}
+      display={'flex'}
+      Flex={'wrap'}
       sx={{
-        borderRadius: '8px',
         textAlign: 'center',
-        padding: 16
+        minWidth: '100%',
+        width: '100vh',
+        minHeight: '80vh',
+        paddingTop: '170px'
       }}
     >
-      <Text variant="title" p={16} sx={{ fontSize: '4rem', color: 'primary' }}>
-        About
+      <Text
+        variant="title"
+        paddingLeft={540}
+        sx={{ fontSize: '3 rem', color: 'primary', marginTop: '600px' }}
+      >
+        Who are we?
       </Text>
-      <Box p={16} sx={{ textAlign: 'center' }}>
-        <Text sx={{ fontSize: ['1.2rem', '1.8rem'], lineHeight: '2' }}>
-          Hack Club is an initiative for students by students. Hack Club is a
-          place that lets you tinker, break, and rebuild. After all, you can't
-          make an omelet without breaking a few eggs 🍳
-        </Text>
-      </Box>
-      <Box sx={{ textAlign: 'center', fontSize: ['2.2rem', '2.5rem'] }}>
-        We At{' '}
+      <Box
+        p={32}
+        sx={{
+          // paddingLeft: '60px',
+
+          minWidth: '50%',
+          width: '52%',
+          textAlign: 'center'
+        }}
+      >
         <Text
-          bg={'purple'}
           sx={{
-            padding: '1px',
-            borderRadius: '5px',
-            color: '#ec3750',
-            fontWeight: '700',
-            // background: 'linear-gradient(to left, #59c173, #a17fe0, #5d26c1)',
-            WebkitBackgroundClip: 'text'
-            // WebkitTextFillColor: 'transparent'
+            fontSize: ['1.3rem'],
+            lineHeight: '1'
           }}
         >
-          Hack Club SVIT
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum optio
+          explicabo voluptatibus quae consequatur enim, dolore officiis nulla
+          distinctio adipisci, cumque rerum odit dignissimos odio a, corporis
+          obcaecati facere i
         </Text>
-        <Flex
-          sx={{
-            mt: '2',
-            flexDirection: ['column', 'column', 'column', 'row'],
-            alignItems: 'stretch',
-            justifyContent: 'space-evenly',
-            fontSize: '1.5rem',
-            textAlign: 'left',
-            padding: 16
-          }}
-        >
-          <Card
-            m={2}
-            sx={{
-              background: '-webkit-linear-gradient(to left, #1cd8d2, #93edc7)',
-              background: 'linear-gradient(to left, #1cd8d2, #93edc7)',
-              color: 'black',
-              textAlign: 'justify'
-            }}
-          >
-            <h3>Coding Environment</h3>Lorem ipsum, dolor sit amet consectetur
-            adipisicing elit. Harum optio explicabo voluptatibus quae
-            consequatur enim, dolore officiis nulla distinctio adipisci, cumque
-            rerum odit dignissimos odio a, corporis obcaecati facere i
-          </Card>
-          <Card
-            m={2}
-            sx={{
-              backgroundImage:
-                'linear-gradient(315deg, #f9ea8f 0%, #aff1da 74%)',
-              backgroundColor: '#f9ea8f',
-              color: 'black',
-              textAlign: 'justify'
-            }}
-          >
-            <h3>Coding Environment</h3>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-            quam quia voluptate consectetur aspernatur. Aspernatur, excepturi
-            facere. Aliquid odit deserunt quis itaque id, quia dicta iure
-            officiis, ducimus doloribus cupiditate.
-          </Card>
-          <Card
-            m={2}
-            sx={{
-              background: 'linear-gradient(to right, #ff6e7f, #bfe9ff)',
-              backgroundColor: '#f9ea8f',
-              color: 'black',
-              textAlign: 'justify'
-            }}
-          >
-            <h3>Coding Environment</h3>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam
-            sequi voluptatem fugiat laborum reprehenderit, soluta ipsam, error
-            impedit doloribus illo quaerat? Optio sint voluptatibus fugiat
-            delectus maxime aut quos eos!
-          </Card>
-        </Flex>
       </Box>
     </Container>
   )

@@ -14,7 +14,7 @@ function Hero() {
       <Container
         sx={{
           backgroundImage:
-            'linear-gradient(0deg, #1B1B1B, rgba(0, 0, 0, 0.8)), url(/new.jpg)',
+            'linear-gradient(0deg, #2F2F2F, rgba(0, 0, 0, 0.8)), url(/new.jpg)',
           backgroundSize: 'cover',
           minHeight: '100vh',
           minWidth: '100%',
@@ -27,7 +27,7 @@ function Hero() {
             justifyContent: 'center',
             alignItems: 'center',
             textAlign: 'center',
-            minHeight: '100vh'
+            minHeight: '115vh'
           }}
         >
           <Heading>
@@ -51,13 +51,13 @@ function Hero() {
           </Heading>
           <Text
             sx={{
-              fontSize: [2, 2, 3, 4],
+              fontSize: [2, 2, 2, 3],
               // border: "1px solid red",
-              maxWidth: ['100%', '100%', '100%', '60%'],
+              maxWidth: ['100%', '100%', '100%', '57%'],
               textAlign: ['center'],
-              color: 'orange',
+              color: '#E9E9E9',
               my: 3,
-              padding: 3
+              padding: 2
             }}
           >
             Just another group of people committed to helping people gain a
@@ -70,16 +70,21 @@ function Hero() {
           >
             <Flex
               sx={{
-                marginBlock: 4,
+                marginBlock: 5,
                 alignItems: 'center',
-                px: '4',
-                borderRadius: '12px',
-                py: '1',
-                background: 'linear-gradient(-55deg, #E21143, #FFB03A)'
+                px: '3',
+                borderRadius: '43px',
+                py: '2',
+                backgroundColor: 'primary'
               }}
             >
               {/* <FaDiscord fontSize="28" color="white" /> */}
-              <Text sx={{ fontSize: 28, mx: 3 }}>Check Out Latest</Text>
+              {/* <div data-src="/arrow-right.svg" /> */}
+              <Text sx={{ fontSize: 23, mx: 3 }}>
+                Check out our latest events
+              </Text>
+              <img src="./arrow-right.svg" />
+              {/* <img src./public/akar-icons_arrow-right.svg></img> */}{' '}
             </Flex>
           </Link>
         </Flex>
