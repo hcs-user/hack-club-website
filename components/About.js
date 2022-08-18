@@ -6,7 +6,6 @@ function About() {
     <Container
       id="about"
       p={4}
-      mb={7}
       bg={'#1D1D1D'}
       display={'flex'}
       Flex={'wrap'}
@@ -15,28 +14,38 @@ function About() {
         minWidth: '100%',
         // width: '100vh',
         minHeight: '80vh',
-        paddingTop: '170px'
+        paddingTop: '140px'
       }}
     >
-      <Box sx={{ paddingLeft: '25px', borderRadius: '40px', float: 'left' }}>
+      <Box
+        px={40}
+        sx={{
+          paddingLeft: '35px',
+          borderRadius: '40px',
+          float: 'left'
+        }}
+      >
         <img src={'./2.jpg'} width={'300px'} height={'300px'} />
       </Box>
       <Text
         variant="title"
         // paddingLeft={540}
-        sx={{ fontSize: '3 rem', color: 'primary', marginTop: '600px' }}
+        // p={4}
+        sx={{
+          fontSize: ['2rem', '2.6rem'],
+          color: 'primary',
+          marginTop: '600px'
+        }}
       >
         Who are we?
       </Text>
 
-      {/* <Box
-        p={32}
+      <Box
         sx={{
-          paddingLeft: '60px',
-          float: 'right',
-          minWidth: '50%',
-          width: '52%',
-          textAlign: 'center'
+          minWidth: '90%',
+          marginTop: '40px',
+          textAlign: 'center',
+          color: '#E9E9E9'
         }}
       >
         <Text
@@ -50,7 +59,7 @@ function About() {
           distinctio adipisci, cumque rerum odit dignissimos odio a, corporis
           obcaecati facere i
         </Text>
-      </Box> */}
+      </Box>
     </Container>
   )
 }

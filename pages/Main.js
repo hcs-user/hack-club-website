@@ -5,15 +5,16 @@ import Gallery from '../components/Gallery'
 import Hero from '../components/hero'
 import Sponser from '../components/Sponser'
 function Main() {
-    return (
-        <>
-            <Hero />
-            <About />
-            <Events />
-            <Gallery />
-            <Sponser/>
-        </>
-    )
+  return (
+    <>
+      <Hero />
+      <About />
+      <Gallery />
+      <Events />
+
+      <Sponser />
+    </>
+  )
 }
 
 export default Main

@@ -31,19 +31,10 @@ function Hero() {
           }}
         >
           <Heading>
-            {' '}
-            {/* <Heading> sx={{
-                        fontSize: [5, 7],
-                        color: "primary"
-                    }}>
-                        Welcome To <br /> */}
             <Text
               sx={{
                 fontSize: [5, 7],
                 color: 'primary'
-                // background: "linear-gradient(to right, #fc5c7d, #6a82fb)",
-                // WebkitBackgroundClip: 'text',
-                // WebkitTextFillColor: 'transparent',
               }}
             >
               Hack Club SVIT
