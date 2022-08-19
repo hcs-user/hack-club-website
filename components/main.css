@@ -32,3 +32,6 @@ a:hover {
     height: max-content;
     margin-top: -65px;
 }
+.rounded{
+    border-radius: 15px;
+}
