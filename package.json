@@ -23,6 +23,6 @@
     "react-responsive-carousel": "^3.2.23",
     "react-twitter-embed": "^4.0.4",
     "swiper": "^8.0.7",
-    "theme-ui": "^0.12.1"
+    "theme-ui": "^0.14.7"
   }
 }
