@@ -26,7 +26,11 @@ function About() {
         ></img>
       </Box>
       <Box sx={{ flex: 0.5, display: 'flex', flexDirection: 'column' }}>
-        <Text variant="title" color="primary" sx={{ fontSize: 52 }}>
+        <Text
+          variant="title"
+          color="primary"
+          sx={{ fontSize: ['2rem', '3rem'] }}
+        >
           Who are we
         </Text>
         <Text sx={{ fontSize: 24, color: '#E9E9E9' }}>

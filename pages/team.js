@@ -16,7 +16,10 @@ function Team() {
       }}
     >
       <Box p={5}>
-        <Text variant="heading" sx={{ color: 'primary', fontSize: 52 }}>
+        <Text
+          variant="title"
+          sx={{ color: 'primary', fontSize: ['2rem', '3rem'] }}
+        >
           Team behind Hack Club Svit
         </Text>
       </Box>

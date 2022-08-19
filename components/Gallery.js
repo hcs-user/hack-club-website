@@ -16,14 +16,14 @@ function Gallery() {
           borderRadius: '1px',
           minWidth: '100%',
           textAlign: 'center',
-          fontSize: ['1.5rem', null, '3rem'],
+          // fontSize: ['1.5rem', null, '3rem'],
           fontWeight: 500
         }}
       >
         <Text
           variant="title"
           mt={2}
-          sx={{ color: 'primary', fontSize: ['1rem', '3rem'] }}
+          sx={{ color: 'primary', fontSize: [4, 5] }}
         >
           Have a look at our previous events
         </Text>
