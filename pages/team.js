@@ -2,28 +2,46 @@ import Image from "next/image"
 import Link from 'next/link'
 import React from 'react'
 import { BsGithub, BsLinkedin } from "react-icons/bs"
-import { Box, Container, Flex, Grid, Text } from 'theme-ui'
+import { Box, Card, Container, Flex, Grid, Text } from 'theme-ui'
 import team from "../components/data/team.json"
 function Team() {
     return (
         <Container
             sx={{
                 // border: "1px solid red",
-                marginTop: 6,
                 height: "max-content",
+                textAlign: "center"
             }}
         >
+
+            <Box marginY={4} sx={{ fontSize: 52 }}>Team  behind Hack Club Svit</Box>
+
             <Grid
                 sx={{
                     gridTemplateColumns: ["repeat(1,1fr)", "repeat(2,1fr)", "repeat(3,1fr)", "repeat(4,1fr)"],
-                    gap: 4,
-                    padding: 4,
-                    rowGap: 5,
                     placeContent: "center",
                     placeItems: "center"
                 }}
             >
                 {
+                    team && team.map((member) => {
+                        return <Box
+                            bg={"red"}
+                            key={member.id}
+                            m={2}
+                            
+                            sx={{ minHeight: '90%', width: '80%', p: 0, display: "flex", flexDirection: "column",borderRadius:4 }}
+                        >
+                            <img
+                                src={member.img}
+                                height={150}
+                                className="image"
+                            />
+                            <Text sx={{fontSize:24}}>{member.name}</Text>
+                        </Box>
+                    })
+                }
+                {/* {
                     team && team.map((el) => {
                         {
                             return <Box
@@ -48,15 +66,15 @@ function Team() {
 
                                     />
                                 </div>
-                                <Flex 
-                                sx={{
-                                    flexDirection: "column",
-                                    // color: "white",
-                                    // border:"1px solid red",
-                                    alignItems: "center",
-                                    minWidth: "100%",
-                                    paddingBlockStart: 1,
-                                }}>
+                                <Flex
+                                    sx={{
+                                        flexDirection: "column",
+                                        // color: "white",
+                                        // border:"1px solid red",
+                                        alignItems: "center",
+                                        minWidth: "100%",
+                                        paddingBlockStart: 1,
+                                    }}>
                                     <Text sx={{ fontSize: 24 }}>
                                         {el.name}
                                     </Text>
@@ -66,7 +84,7 @@ function Team() {
                                         fontSize: 21,
                                         justifyContent: "space-between",
                                         // border:"1px solid red",
-                                        
+
                                         marginBlock: 2,
                                         padding: 2,
                                     }}>
@@ -77,7 +95,7 @@ function Team() {
                             </Box>
                         }
                     })
-                }
+                } */}
             </Grid>
         </Container >
 

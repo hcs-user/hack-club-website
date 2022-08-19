@@ -14,9 +14,13 @@
     border-radius: 10px;
 }
 
-.image {
-    border-radius: 50%;
-    border: 2px salmon solid !important;
+.image{
+    position: relative;
+    min-height:200px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    width: 100%;
+    object-fit:cover;
 }
 
 a {
