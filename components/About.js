@@ -9,20 +9,32 @@ function About() {
       sx={{
         textAlign: 'center',
         minWidth: '100%',
-        minHeight: "fit-content",
-        paddingBlock:[48,null,64],
-        display: "flex",
-        flexDirection: ["column", "row"],
-        alignItems: "center",
-        justifyContent: "space-evenly"
+        minHeight: 'fit-content',
+        paddingBlock: [48, null, 64],
+        display: 'flex',
+        flexDirection: ['column', 'row'],
+        alignItems: 'center',
+        justifyContent: 'space-evenly'
       }}
     >
-      <Box sx={{ height: "auto", width: [250, null, 300], flex: 0.2 }}>
-        <img src='/2.jpg' height={"100%"} width={"100%"} className="rounded"></img>
+      <Box sx={{ height: 'auto', width: [250, null, 300], flex: 0.2 }}>
+        <img
+          src="/2.jpg"
+          height={'100%'}
+          width={'100%'}
+          className="rounded"
+        ></img>
       </Box>
-      <Box sx={{ flex: 0.5,display:'flex',flexDirection:"column" }} >
-        <Text color='primary' sx={{ fontSize: 52 }}>Who are we</Text>
-        <Text sx={{ fontSize: 24 }}>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum optio explicabo voluptatibus quae consequatur enim, dolore officiis nulla distinctio adipisci, cumque rerum odit dignissimos odio a, corporis obcaecati facere i</Text>
+      <Box sx={{ flex: 0.5, display: 'flex', flexDirection: 'column' }}>
+        <Text variant="title" color="primary" sx={{ fontSize: 52 }}>
+          Who are we
+        </Text>
+        <Text sx={{ fontSize: 24, color: '#E9E9E9' }}>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum optio
+          explicabo voluptatibus quae consequatur enim, dolore officiis nulla
+          distinctio adipisci, cumque rerum odit dignissimos odio a, corporis
+          obcaecati facere i
+        </Text>
       </Box>
     </Container>
   )

@@ -3,22 +3,22 @@ import { Box, Container, Flex, IconButton, Image, Text } from 'theme-ui'
 function Footer() {
   return (
     <>
-      <Container p={3} mt={4} sx={{ borderTop: "1px solid" }}
-        variant={'wide'}
-      >
-        <Flex sx={{
-          flexDirection: ['column', 'row'],
-          justifyContent: ['center', 'space-around'],
-          alignItems: 'center',
-          fontSize: 20,
-          marginBlock: 2,
-        }}>
+      <Container p={3} mt={4} sx={{ borderTop: '1px solid' }} variant={'wide'}>
+        <Flex
+          sx={{
+            flexDirection: ['column', 'row'],
+            justifyContent: ['center', 'space-around'],
+            alignItems: 'center',
+            fontSize: 20,
+            marginBlock: 2
+          }}
+        >
           <Flex
             sx={{
               // border: "1px solid snow",
-              justifyContent: "space-between",
-              alignItems: "center",
-              width: "max-content"
+              justifyContent: 'space-between',
+              alignItems: 'center',
+              width: 'max-content'
             }}
           >
             <Image
@@ -30,12 +30,13 @@ function Footer() {
             <Text sx={{ paddingInline: 2 }}>Hack Club SVIT</Text>
           </Flex>
         </Flex>
-        <Flex sx={{
-          flexDirection: ['column', 'row'],
-          justifyContent: ['center', "space-between"],
-          alignItems: ['center']
-
-        }}>
+        <Flex
+          sx={{
+            flexDirection: ['column', 'row'],
+            justifyContent: ['center', 'space-between'],
+            alignItems: ['center']
+          }}
+        >
           <Box marginBlock={1}>
             <IconButton aria-label="Toggle dark mode">
               <svg
@@ -169,11 +170,8 @@ function Footer() {
             </IconButton>
           </Box>
 
-
-          <Box sx={{ textAlign: "center", marginBlock: 1, }}>
-            <Text>
-              © 2022, Hack Club SVIT. All rights reserved.
-            </Text>
+          <Box sx={{ textAlign: 'center', marginBlock: 1 }}>
+            <Text>© 2022, Hack Club SVIT. All rights reserved.</Text>
           </Box>
         </Flex>
       </Container>

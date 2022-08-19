@@ -1,47 +1,63 @@
-import Image from "next/image"
+import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-import { BsGithub, BsLinkedin } from "react-icons/bs"
+import { BsGithub, BsLinkedin } from 'react-icons/bs'
 import { Box, Card, Container, Flex, Grid, Text } from 'theme-ui'
-import team from "../components/data/team.json"
+import team from '../components/data/team.json'
 function Team() {
-    return (
-        <Container
-            sx={{
-                // border: "1px solid red",
-                height: "max-content",
-                textAlign: "center"
-            }}
-        >
+  return (
+    <Container
+      sx={{
+        // border: "1px solid red",
+        backgroundColor: '#2F2F2F',
+        height: 'max-content',
+        minWidth: '100%',
+        textAlign: 'center'
+      }}
+    >
+      <Box p={5}>
+        <Text variant="heading" sx={{ color: 'primary', fontSize: 52 }}>
+          Team behind Hack Club Svit
+        </Text>
+      </Box>
 
-            <Box marginY={4} sx={{ fontSize: 52 }}>Team  behind Hack Club Svit</Box>
-
-            <Grid
+      <Grid
+        marginY={4}
+        sx={{
+          gridTemplateColumns: [
+            'repeat(1,1fr)',
+            'repeat(2,1fr)',
+            'repeat(3,1fr)',
+            'repeat(4,1fr)'
+          ],
+          placeContent: 'center',
+          placeItems: 'center'
+        }}
+      >
+        {team &&
+          team.map(member => {
+            return (
+              <Box
+                bg={'red'}
+                key={member.id}
+                m={3}
                 sx={{
-                    gridTemplateColumns: ["repeat(1,1fr)", "repeat(2,1fr)", "repeat(3,1fr)", "repeat(4,1fr)"],
-                    placeContent: "center",
-                    placeItems: "center"
+                  minHeight: '90%',
+                  width: '80%',
+                  p: 0,
+                  display: 'flex',
+                  flexDirection: 'column',
+                  borderRadius: 4
                 }}
-            >
-                {
-                    team && team.map((member) => {
-                        return <Box
-                            bg={"red"}
-                            key={member.id}
-                            m={2}
-                            
-                            sx={{ minHeight: '90%', width: '80%', p: 0, display: "flex", flexDirection: "column",borderRadius:4 }}
-                        >
-                            <img
-                                src={member.img}
-                                height={150}
-                                className="image"
-                            />
-                            <Text sx={{fontSize:24}}>{member.name}</Text>
-                        </Box>
-                    })
-                }
-                {/* {
+              >
+                <img src={member.img} height={150} className="image" />
+                <Text sx={{ color: '#E9E9E9', fontSize: 24 }}>
+                  {member.name}
+                </Text>
+              </Box>
+            )
+          })}
+        {/* {
                     team && team.map((el) => {
                         {
                             return <Box
@@ -96,10 +112,9 @@ function Team() {
                         }
                     })
                 } */}
-            </Grid>
-        </Container >
-
-    )
+      </Grid>
+    </Container>
+  )
 }
 
 export default Team
