@@ -5,6 +5,7 @@ import Events from '../components/Events'
 import Gallery from '../components/Gallery'
 import Hero from '../components/hero'
 import Sponser from '../components/Sponser'
+import Testimonial from '../components/Testimonial'
 import Team from './team'
 function Main() {
   return (
@@ -12,6 +13,7 @@ function Main() {
       <Hero />
       <About />
       <Gallery />
+      <Testimonial/>
       <Team />
       {/* <Events /> */}
       {/* <Sponser /> */}

@@ -39,3 +39,9 @@ a:hover {
 .rounded{
     border-radius: 15px;
 }
+.tweet{
+    display: block;
+    flex-direction: row;
+    max-height: 80vh;
+    overflow-y: scroll;
+}
