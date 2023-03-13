@@ -2372,12 +2372,12 @@ react-easy-swipe@^0.0.21:
   dependencies:
     prop-types "^15.5.8"
 
-react-horizontal-scrolling-menu@^3.2.0:
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/react-horizontal-scrolling-menu/-/react-horizontal-scrolling-menu-3.2.0.tgz#f871b46125225fae4cf311b00720579066b35ace"
-  integrity sha512-6kmUPdTDXJKYlhfS5K1tAop6P1LJTSL493cUZBKHjOWsnmg3/KLPI/7Pr3b/LpiNFCUjTAPRl2JOunagGzwOjQ==
+react-horizontal-scrolling-menu@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/react-horizontal-scrolling-menu/-/react-horizontal-scrolling-menu-4.0.0.tgz#f5f9bcabd10ed307639e57cf1c0c9bf5a49b87e7"
+  integrity sha512-iXyJNQXoLBb19dGaODcMm3H0X+qe5FMF/kfH5+25QD1KiwvGXde7y8xrawuemXP3+9OOOInJMlQ30oxlXoLKRw==
   dependencies:
-    smooth-scroll-into-view-if-needed "^1.1.32"
+    smooth-scroll-into-view-if-needed "~1.1"
 
 react-icons@^4.3.1:
   version "4.3.1"
@@ -2590,7 +2590,7 @@ shell-quote@1.7.3:
   resolved "https://registry.npmjs.org/shell-quote/-/shell-quote-1.7.3.tgz"
   integrity sha512-Vpfqwm4EnqGdlsBFNmHhxhElJYrdfcxPThu+ryKS5J8L/fhAwLazFZtq+S+TWZ9ANj2piSQLGj6NQg+lKPmxrw==
 
-smooth-scroll-into-view-if-needed@^1.1.32:
+smooth-scroll-into-view-if-needed@~1.1:
   version "1.1.33"
   resolved "https://registry.yarnpkg.com/smooth-scroll-into-view-if-needed/-/smooth-scroll-into-view-if-needed-1.1.33.tgz#2c7b88c82784c69030cb0489b9df584e94e01533"
   integrity sha512-crS8NfAaoPrtVYOCMSAnO2vHRgUp22NiiDgEQ7YiaAy5xe2jmR19Jm+QdL8+97gO8ENd7PUyQIAQojJyIiyRHw==
